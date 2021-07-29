@@ -1,0 +1,54 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>운영시간 | 서울랜드</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../common/css/style.css">
+    <!--[if IE9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <? include "../common/sub_head.html" ?>
+    <? include "../common/sub-info.html" ?>
+
+    <article id="sub-cont-wrap">
+        <h2 class="page-title">운영시간</h2>
+        <div class="page-cont">
+            <div class="inner">
+                <section class="operation">
+                    <h3 class="tit">운영시간</h3>
+                    <div class="box">
+                        <dl>
+                            <dt>주중</dt>
+                            <dd><span>1</span><span>0</span>:<span>0</span><span>0</span> ~
+                                <span>2</span><span>1</span>:<span>0</span><span>0</span></dd>
+                        </dl>
+                        <dl>
+                            <dt>주말 및 공휴일</dt>
+                            <dd><span>1</span><span>0</span>:<span>0</span><span>0</span> ~
+                                <span>2</span><span>2</span>:<span>0</span><span>0</span></dd>
+                        </dl>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </article>
+    </div>
+
+    <? include "../common/sub_foot.html" ?>
+
+</body>
+
+</html>

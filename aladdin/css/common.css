@@ -1,0 +1,179 @@
+/* Reset CSS  */
+* { margin:0; padding:0; border:0; outline:0; vertical-align:top;
+  }
+body {font-family: 'Abel'; font-size:16px; color:#333;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
+ul, ol, dl { list-style:none; }
+img, video {border:0; vertical-align:top; }
+a, a:link {color:#333;text-decoration:none; }
+a:visited { color:#333; }
+a:hover, a:active {color:#333;text-decoration:none; }
+table { border-collapse:collapse; border-spacing:0; }
+input, select { vertical-align:middle; }
+label { cursor:pointer; }
+.blind,legend,hr,caption { display:block; overflow:hidden; position:absolute; top:0; left:-1000em; }
+i,em,address { font-style:normal; font-weight:normal; }
+p,li,dd{ line-height:1.5em}
+.hidden, #skipNav {
+    display: block; position: absolute; top:0; left: -1000%; width: 1px; height: 1px; overflow: hidden;
+    color: #fff
+}
+
+.clearfix::before, 
+.clearfix::after {
+    display: block; content: ''; clear: both
+}
+
+
+/* 헤더 공통 영역 */
+#headerArea{
+    position:absolute; z-index: 30; height: 100px; background:#0f0125; background:  linear-gradient(to bottom, rgb(15, 1, 37, 1) 0%, rgb(25, 5, 66, .8) 100%);  left:0; width: 100%;
+}	
+
+#headerArea	.headerInner{width: 90%; margin: 0 5%;  }
+
+#headerArea h1 {
+    position: absolute; width:140px; left:50%; top: 15px; margin-left:-80px
+}
+
+#headerArea h1 a {
+    display: block; background:url(../images/logo1.png) no-repeat; width:180px; height:100px; text-indent: -999px; overflow: hidden; background-size:180px
+}
+
+#headerArea .menuOpen {
+    display: none
+}
+
+
+
+#headerArea #gnb{
+    width:100%; margin-top: 50px
+}
+
+#headerArea #gnb ul{
+    overflow: hidden
+}
+
+#headerArea #gnb ul li{
+    float: left; width:20%
+}
+
+#headerArea #gnb ul li a{
+    display: block; font-size: 1.4em; color: #fff; text-decoration: none; text-align: center
+}
+
+#headerArea #gnb ul li:nth-of-type(2) {
+    margin-right: 20%
+}
+
+/*
+#headerArea #gnb ul li a:hover {
+    background: #006a71; color:#fff
+}
+*/
+
+
+
+/* 푸터 공통 영역 */
+#footerArea {
+    height:200px; background:#333
+}
+
+#footerArea .foot_logo {
+    display: block; padding-top:30px; text-align: center
+}
+
+#footerArea .foot_logo img {
+    width: 200px
+}
+
+#footerArea p {
+    padding-top:30px; font-size:.8em; color:#fff; text-align: center
+}
+
+a.top_btn {
+    display: none; position: fixed; bottom:30%; right:3%; border-radius: 50%; background:#502f9d; color: #fff; padding:15px 10px; z-index: 1000
+}
+
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+	
+}
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+	
+/*    #headerArea	.headerInner{width: 95%; margin:0 2.5%}*/
+    
+    
+ 
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+/*
+    #headerArea{
+        position: relative; height: 100%;  left:0; top: 0; width: 100%; 
+    }	
+*/
+    
+    #headerArea {
+        height:80px
+    }
+
+    #headerArea	.headerInner{ width: auto; margin:0}
+
+    #headerArea h1 {
+    position: relative; top:12px; left:0; width:140px; margin:0 auto
+}
+    
+    #headerArea h1 a {
+   width:140px; height:80px; text-indent: -999px; overflow: hidden; background-size:140px
+}
+    
+    #headerArea .menuOpen {
+        display: block; position: absolute; right:24px; top: 16px; color: #fff; z-index: 100
+    }
+    
+    #headerArea .menuOpen img {
+    width:50px; height:50px
+}
+
+    #headerArea .menuOpen i {
+        font-size:22px
+    }
+    
+	#headerArea #gnb{
+    position: absolute; top:80px; left:0; width:100%; padding:20px 0; margin-top: 0; background:rgba(0,0,0,.8); text-align: center; display: none; z-index: 40
+    }
+    
+    #headerArea #gnb ul {
+        padding:0
+    }
+
+    
+    #headerArea #gnb ul li{
+        float:none; width:100%; margin-right: 0;
+    }
+
+    #headerArea #gnb ul li a {
+       display: block; font-size:1.2em; padding:10px 0
+    }
+    
+    
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+	
+}
+
+/* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+	#wrap { min-width:320px; }
+}
+
+

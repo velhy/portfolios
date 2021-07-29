@@ -1,0 +1,354 @@
+@charset "utf-8";
+
+/**********************************************************************************
+** visual
+***********************************************************************************/
+.container-wrapper .main-visual-wrap {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.container-wrapper .main-visual-wrap .visual-list {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%
+}
+
+.container-wrapper .main-visual-wrap .visual-list li {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container-wrapper .main-visual-wrap .visual-list li.active {
+    display: block;
+    position: relative;
+}
+
+.container-wrapper .main-visual-wrap .btn-wrap {
+    align-items: center;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 6px 10px;
+}
+
+.container-wrapper .main-visual-wrap .visual-btn-wrap {
+    width: 200px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.container-wrapper .main-visual-wrap .visual-btn-wrap .btn-dot {
+    width: 33.33%;
+    height:4px;
+    background: rgba(255, 255, 255, .5);
+}
+
+.container-wrapper .main-visual-wrap .visual-btn-wrap .btn-dot.active {
+    background: #fff;
+}
+
+.container-wrapper .main-visual-wrap ion-icon {
+    color: rgba(255, 255, 255, .7);
+    font-size: 2rem;
+}
+
+
+
+
+/**********************************************************************************
+** main-cont-wrap
+***********************************************************************************/
+.container-wrapper #main-cont-wrap .sec-wrap {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.container-wrapper #main-cont-wrap .sec-wrap:nth-of-type(1),
+.container-wrapper #main-cont-wrap .sec-wrap:nth-of-type(3) {
+    background: #f8f8f8;
+}
+
+.container-wrapper #main-cont-wrap .sec-wrap .list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.container-wrapper #main-cont-wrap .title-wrap {
+    margin-bottom: 80px;
+}
+
+.container-wrapper #main-cont-wrap .main-tit {
+    display: inline-block;
+    position: relative;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.container-wrapper #main-cont-wrap .main-tit span {
+    position: relative;
+    z-index: 100;
+}
+
+.container-wrapper #main-cont-wrap .main-tit::before {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 25px;
+    background: #f9ca24;
+    transform: translateX(-50%) skew(-15deg);
+    transition: all .5s ease;
+}
+
+.container-wrapper #main-cont-wrap .main-tit.active::before {
+    left: 50%;
+    width: 104%;
+}
+
+.container-wrapper #main-cont-wrap .main-txt {
+    margin-top: 20px;
+    font-size: 1.8rem;
+}
+
+.container-wrapper #main-cont-wrap .link {
+    display: inline-block;
+    width: 220px;
+    margin-top: 60px;
+    padding: 16px 0;
+    background: #2ed277;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: 500;
+}
+
+
+
+/**********************************************************************************
+** attraction
+***********************************************************************************/
+.container-wrapper #main-cont-wrap .attraction-wrap .title-wrap {
+    margin-top: 70px;
+}
+
+.container-wrapper #main-cont-wrap .main-video {
+    width: 850px;
+    border-radius: 40px;
+}
+
+.container-wrapper #main-cont-wrap .attraction-list li {
+    overflow: hidden;
+    position: relative;
+    width: 20%;
+    margin-top: 0;
+}
+
+.container-wrapper #main-cont-wrap .attraction-list li:not(:nth-of-type(4n)) {
+    margin-right: 0
+}
+
+.container-wrapper #main-cont-wrap .attraction-list li dl {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+    color: #fff;
+    transition: all .3s ease;
+    opacity: 0;
+}
+
+.container-wrapper #main-cont-wrap .attraction-list li dl::after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 90%;
+    height: 90%;
+    border: 1px solid rgba(255, 255, 255, .2);
+}
+
+.container-wrapper #main-cont-wrap .attraction-list li:hover dl {
+    opacity: 1;
+}
+
+.container-wrapper #main-cont-wrap .attraction-list li img {
+    margin: 0 auto;
+} 
+
+.container-wrapper #main-cont-wrap .attraction-list li dt {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+
+
+/**********************************************************************************
+** benefit
+***********************************************************************************/
+.container-wrapper #main-cont-wrap .benefit-list {
+    border-top: 1px solid #e1e1e1;
+    border-left: 1px solid #e1e1e1;
+}
+
+.container-wrapper #main-cont-wrap .benefit-list li {
+    width: 25%;
+}
+
+.container-wrapper #main-cont-wrap .benefit-list li:not(:nth-of-type(4n)) {
+    margin-right: 0
+}
+
+.container-wrapper #main-cont-wrap .benefit-list li a {
+    position: relative;
+    padding: 20px 0 30px;
+    border-bottom: 1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1;
+}
+
+.container-wrapper #main-cont-wrap .benefit-list li a::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 99%;
+    height: 99%;
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: all .3s ease;
+}
+
+.container-wrapper #main-cont-wrap .benefit-list li:hover a::before {
+    content: '';
+    border: 2px solid #f9ca24;
+    box-shadow: 20px 20px 40px 0 #ccc;
+}
+
+.container-wrapper #main-cont-wrap .benefit-list li img {
+    width: 80%;
+    margin: 0 auto;
+    transform: scale(1);
+    transition: all .3s ease;
+}
+
+.container-wrapper #main-cont-wrap .benefit-list li:hover img {
+    transform: scale(1.06);
+}
+
+.container-wrapper #main-cont-wrap .benefit-list li .txt-md {
+    margin-top: 10px;
+}
+
+
+
+
+/**********************************************************************************
+** card list 
+***********************************************************************************/
+.container-wrapper #main-cont-wrap .card-list {
+    position: relative;
+    width: 2600px;
+    transition: all .6s;
+}
+
+.container-wrapper #main-cont-wrap .card-list li {
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 0 20px 0 0;
+    background: #eee;
+    transition: all .3s ease;
+}
+
+.container-wrapper #main-cont-wrap .card-list li dl {
+    padding: 60px 30px;
+}
+
+.container-wrapper #main-cont-wrap .card-list li dd {
+    margin: 10px 0;
+}
+
+.container-wrapper #main-cont-wrap .card-list li>img {
+    position: relative;
+    top: -30px;
+    width: 180px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #ccc;
+    transition: all .3s ease;
+}
+
+.container-wrapper #main-cont-wrap .btn-slider {
+    width: 150px;
+    height: 8px;
+    margin: 70px auto 50px;
+    border-radius: 2px;
+    background: #E0E0E0;
+}
+
+.container-wrapper #main-cont-wrap .thumb {
+    position: relative;
+    left: 0;
+    top: -10px;
+    width: 46px;
+    height: 26px;
+    border-radius: 20px;
+    background: #1f1f1f;
+    cursor: pointer;
+    opacity: .8;
+}
+
+.container-wrapper #main-cont-wrap .thumb ion-icon {
+    margin-top: 6px;
+    color: #fff
+}
+
+
+
+.container-wrapper #main-cont-wrap .service-wrap .cont-wrap {
+    justify-content: space-between;
+}
+
+.container-wrapper #main-cont-wrap .info-wrap {
+    width: 49%;
+    padding: 30px 44px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.container-wrapper #main-cont-wrap .info-wrap li a {
+    position: relative;
+    padding: 18px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+.container-wrapper #main-cont-wrap .info-wrap .txt-sm {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    color: #999;
+}
+
+.container-wrapper #main-cont-wrap .info-wrap .btn-more {
+    position: absolute;
+    top:30px;
+    right: 40px;
+}
+
+.container-wrapper #main-cont-wrap .info-wrap .btn-more ion-icon {
+    font-size: 2.8rem;
+}

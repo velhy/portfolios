@@ -1,0 +1,225 @@
+
+
+/* Sweep To Right */
+.hvr-sweep-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #2098D1;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+  color: white;
+}
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+/* Underline From Center */
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: #68b0ab ;
+  height: 3px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+
+
+
+
+
+/* feature film 영역 */
+.feature .inWrap {
+	position: relative;
+}
+
+.feature .fInner {
+	margin: 0 auto;	width: 90%; overflow: hidden;
+	padding-bottom: 1%;
+}
+
+.feature li {
+	float: left; width: 400px; height: 300px;	margin-bottom: 4em; list-style: none
+}
+
+.feature li a {
+	position: relative;
+	display: block; background: #f0f0f0; height: 100%; margin: 0 3%;
+	box-shadow: 2px 2px 5px gray;
+	text-align: center;
+}
+.feature li span {
+	display: block;
+	position: absolute;
+	bottom: -3em;
+	width: 100%;
+    color:#333;
+	font-size: 1em;
+	font-weight: 400;
+}
+
+.feature li:nth-child(1) a{
+	background: url(../images/gal-1.jpg) center center no-repeat;
+	background-size: cover;
+}
+.feature li:nth-child(2) a{
+	background: url(../images/gal-8.jpg) center center no-repeat;
+	background-size: cover;
+}
+.feature li:nth-child(3) a{
+	background: url(../images/gal-3.jpg) center center no-repeat;
+	background-size: cover;
+}
+.feature li:nth-child(4) a{
+	background: url(../images/gal-4.jpg) center center no-repeat;
+	background-size: cover;
+}
+.feature li:nth-child(5) a{
+	background: url(../images/gal-5.jpg) center center no-repeat;
+	background-size: cover;
+}
+.feature li:nth-child(6) a{
+	background: url(../images/gal-6.jpg) center center no-repeat;
+	background-size: cover;
+}
+.feature li:nth-child(7) a{
+	background: url(../images/gal-7.jpg) center center no-repeat;
+	background-size: cover;
+}
+.feature li:nth-child(8) a{
+	background: url(../images/gal-8.jpg) center center no-repeat;
+	background-size: cover;
+}
+.feature li:nth-child(9) a{
+	background: url(../images/gal3.jpg) center center no-repeat;
+	background-size: cover;
+}
+
+
+
+.feature .swiper-pagination {
+	position: relative;
+	margin-top: 30px;
+}
+.feature .swiper-pagination-progress .swiper-pagination-progressbar{
+	background: #2f0d7e; 
+}
+
+.feature .button div {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background: #2f0d7e;
+	color: #fff;
+	border-radius: 50%;
+	text-align: center;
+	top: 50%;
+	box-shadow: 2px 2px 5px gray;
+	transition: all 0.2s
+}
+.feature .button div:active {
+	transform: translate(2px,2px);
+}
+.feature .button a {
+	display: block;
+	height: 100%;
+}
+
+.feature .back a {
+    background: url(../images/back.svg) center center no-repeat;
+    background-size: 20px 20px;
+    text-indent: -999px; overflow: hidden;
+}
+
+.feature .next a {
+	background: url(../images/next.svg) center center no-repeat;
+    background-size: 20px 20px;
+    text-indent: -999px; overflow: hidden;
+}
+
+.feature .back {
+	left: 2%; display: none
+}
+.feature .next {
+	right: 2%; display: none
+}
+
+
+@media screen and (max-width:1280px) {
+    
+}
+
+
+
+@media screen and (max-width:1024px) {
+    
+    
+    
+}
+
+
+@media screen and (max-width:768px) {
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+

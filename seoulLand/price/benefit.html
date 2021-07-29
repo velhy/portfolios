@@ -1,0 +1,351 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>할인혜택 | 서울랜드</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../common/css/style.css">
+
+    <!--[if IE9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <? include "../common/sub_head.html" ?>
+    <? include "../common/sub-price.html" ?>
+
+    <article id="sub-cont-wrap">
+        <h2 class="page-title">할인혜택</h2>
+        <div class="page-cont benefit-cont">
+            <div class="inner">
+                <div class="tabs flex">
+                    <button class="btn-img active">
+                        <img src="../common/img/main-benefit-01.png" alt="">
+                        <span class="gradient"><span>어린이 + 동반1인</span></span>
+                    </button>
+                    <button class="btn-img">
+                        <img src="../common/img/main-benefit-02.png" alt="">
+                        <span class="gradient"><span>중, 고등학생</span></span>
+                    </button>
+                    <button class="btn-img">
+                        <img src="../common/img/main-benefit-03.png" alt="">
+                        <span class="gradient"><span>연간이용권 추천인</span></span>
+                    </button>
+                    <button class="btn-img">
+                        <img src="../common/img/main-benefit-04.png" alt="">
+                        <span class="gradient"><span>대학생</span></span>
+                    </button>
+                    <button class="btn-img">
+                        <img src="../common/img/sub-benefit-05.png" alt="">
+                        <span class="gradient"><span>생일축하</span></span>
+                    </button>
+                    <button class="btn-img">
+                        <img src="../common/img/sub-benefit-06.png" alt="">
+                        <span class="gradient"><span>60세 이상</span></span>
+                    </button>
+                </div>
+
+                <section class="tab-con">
+                    <h3 class="tit">어린이 + 동반 1인</h3>
+                    <div class="tbl-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>구분</th>
+                                    <th>상품</th>
+                                    <th>정상가</th>
+                                    <th>할인가</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="2">미취학 어린이</td>
+                                    <td>파크이용권 [종일]</td>
+                                    <td>40,000원</td>
+                                    <td>17,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>파크이용권 [야간]</td>
+                                    <td>33,000원</td>
+                                    <td>15,000원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <dl>
+                        <dt>기간</dt>
+                        <dd>2021. 05. 01 ~ 06. 30</dd>
+                    </dl>
+                    <dl>
+                        <dt>방법</dt>
+                        <dd>- 보호자가 서울랜드 카카오플러스 친구 팔로우 후 매표소에 제시<br>
+                            - 미취학어린이임을 증명할수 있는 서류 제시</dd>
+                    </dl>
+                    <dl>
+                        <dt>주의사항</dt>
+                        <dd>① 서울랜드 카카오플러스친구 팔로우 후 매표소에 제시해야 합니다. <br>
+                            ② 매표소에서 미취학 어린이임을 확인할 수 있는 서류를 제시해야 합니다.<br>
+                            ③ 본 서비스는 다른 할인쿠폰 및 제휴카드 할인과 중복할인 적용이 되지 않습니다.
+                        </dd>
+                    </dl>
+                </section>
+
+                <section class="tab-con">
+                    <h3 class="tit">중고생 할인! 설랜은 지금 K-POP 춤바람!</h3>
+                    <div class="tbl-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>구분</th>
+                                    <th>상품</th>
+                                    <th>정상가</th>
+                                    <th>할인가</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="2">중, 고등학생</td>
+                                    <td>파크이용권 [종일] 2매</td>
+                                    <td>86,000원</td>
+                                    <td>37,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>파크이용권 [야간] 2매</td>
+                                    <td>72,000원</td>
+                                    <td>31,000원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <dl>
+                        <dt>기간</dt>
+                        <dd>2021. 05. 01 ~ 08. 31</dd>
+                    </dl>
+                    <dl>
+                        <dt>방법</dt>
+                        <dd>- 서울랜드 카카오플러스 친구추가<br>
+                            - 중, 고등학생임을 증명할 수 있는 학생증 등 서류 매표소에 제시</dd>
+                    </dl>
+                    <dl>
+                        <dt>주의사항</dt>
+                        <dd>① 서울랜드 카카오플러스친구 팔로우 후 매표소에 제시해야 합니다. <br>
+                            ② 매표소에서 중, 고등학생임을 확인할 수 있는 학생증 등의 서류를 제시해야 합니다.<br>
+                            ③ 본 서비스는 다른 할인쿠폰 및 제휴카드 할인과 중복할인 적용이 되지 않습니다.
+                        </dd>
+                    </dl>
+                </section>
+
+                <section class="tab-con">
+                    <h3 class="tit">연간이용권 추천인 할인 프로모션</h3>
+                    <div class="tbl-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>구분</th>
+                                    <th>상품</th>
+                                    <th>정상가</th>
+                                    <th>할인가</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>어른/청소년</td>
+                                    <td rowspan="2">서울랜드 연간 이용권</td>
+                                    <td>86,000원</td>
+                                    <td>37,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>어린이</td>
+                                    <td>72,000원</td>
+                                    <td>31,000원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <dl>
+                        <dt>기간</dt>
+                        <dd>2020. 06. 25 ~ 2021. 08. 31</dd>
+                    </dl>
+                    <dl>
+                        <dt>방법</dt>
+                        <dd>- 현재 연간이용고객에게 발송된 문자메세지를 주변 추천인에게 전달하여 연간이용센터에 제시하면 할인 혜택 적용<br>
+                            * 문자를 못 받으신 경우 연간이용센터에서 추천 고객 정보 조회 후 혜택 적용 가능합니다.<br>
+                            * 당일 구입한 연간이용권은 해당되지 않습니다.<br>
+                            * 실버, 키즈 계층은 해당되지 않습니다.</dd>
+                    </dl>
+                    <dl>
+                        <dt>주의사항</dt>
+                        <dd>
+                            ① 다른 할인 및 우대 등과 중복으로 적용되지 않습니다.<br>
+                            ② 둘모아, 다모아 연간이용권은 본 프로모션에 해당하지 않습니다.<br>
+                            ③ 프로모션으로 가입한 연간이용권 환불, 양도, 기간중지가 불가합니다.<br>
+                            ④ 방문전 연간이용센터에서 운영시간을 꼭 확인하시어 착오없으시길 바랍니다.
+                        </dd>
+                    </dl>
+                </section>
+
+                <section class="tab-con">
+                    <h3 class="tit">대학생 18,500원</h3>
+                    <div class="tbl-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>구분</th>
+                                    <th>상품</th>
+                                    <th>정상가</th>
+                                    <th>할인가</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="2">대학생</td>
+                                    <td>파크이용권 [종일]</td>
+                                    <td>46,000원</td>
+                                    <td>18,500원</td>
+                                </tr>
+                                <tr>
+
+                                    <td>파크이용권 [야간]</td>
+                                    <td>39,000원</td>
+                                    <td>15,500원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <dl>
+                        <dt>기간</dt>
+                        <dd>2021. 06. 26 ~ 08. 31</dd>
+                    </dl>
+                    <dl>
+                        <dt>방법</dt>
+                        <dd>- 서울랜드 매표소에서 학생증 제시하면 프로모션 혜택 적용</dd>
+                    </dl>
+                    <dl>
+                        <dt>주의사항</dt>
+                        <dd>① 정, 동문 단체상담실에서 대학교 학생증을 제시하면 해당 프로모션 혜택 적용됩니다.<br>
+                            ② 본 할인은 다른 할인쿠폰 및 제휴카드 할인과 중복할인이 적용되지 않습니다.
+                        </dd>
+                    </dl>
+                </section>
+
+                <section class="tab-con">
+                    <h3 class="tit">생일축하 파크이용권 45% 할인</h3>
+                    <div class="tbl-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th rowspan="2">구분</th>
+                                    <th colspan="2">주간(1일권)</th>
+                                    <th colspan="2">야간(오후4시~폐장까지)</th>
+                                </tr>
+                                <tr>
+                                    <th>정상가</th>
+                                    <th>할인가</th>
+                                    <th>정상가</th>
+                                    <th>할인가</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>어른</td>
+                                    <td>46,000원</td>
+                                    <td>25,000원</td>
+                                    <td>39,000원</td>
+                                    <td>21,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>청소년</td>
+                                    <td>43,000원</td>
+                                    <td>23,500원</td>
+                                    <td>36,000원</td>
+                                    <td>19,500원</td>
+                                </tr>
+                                <tr>
+                                    <td>어린이</td>
+                                    <td>40,000원</td>
+                                    <td>22,000원</td>
+                                    <td>33,000원</td>
+                                    <td>18,000원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <dl>
+                        <dt>기간</dt>
+                        <dd>2021. 06. 01 ~ 07. 31</dd>
+                    </dl>
+                    <dl>
+                        <dt>방법</dt>
+                        <dd>- 신분증 매표소 제시 시 동반 3인까지 45% 할인</dd>
+                    </dl>
+                    <dl>
+                        <dt>주의사항</dt>
+                        <dd>
+                            ① 신분증은 본인의 생년월일이 안내된 주민등록증, 등본, 건강보험증, 여권, 자격증, 학생증, 외국인등록증 등 입니다.<br>
+                            ② 생일자 본인이 직접 신분증을 제시하셔야 45% 할인혜택을 받으실 수 있습니다.<br>
+                            ③ 생일은 양력, 음력 상관없이 주민등록번호 생일을 기준으로 합니다.<br>
+                            ④ 본 서비스는 다른 할인쿠폰 및 제휴카드 할인과 중복할인 적용이 되지 않습니다.
+                        </dd>
+                    </dl>
+                </section>
+
+                <section class="tab-con">
+                    <h3 class="tit">60세이상 젊은오빠누나 19,000원</h3>
+                    <div class="tbl-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>구분</th>
+                                    <th>정상가</th>
+                                    <th>할인가</th>
+                                    <th>비고</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>60세 이상 어른</td>
+                                    <td>46,000원</td>
+                                    <td>19,000원</td>
+                                    <td>주간권(1일권) 야간권 동일요금</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <dl>
+                        <dt>기간</dt>
+                        <dd>2021. 06. 01 ~ 07. 31</dd>
+                    </dl>
+                    <dl>
+                        <dt>방법</dt>
+                        <dd>- 신분증 매표소에 제시시 본인 파크이용권 할인</dd>
+                    </dl>
+                    <dl>
+                        <dt>주의사항</dt>
+                        <dd>① 주민등록번호 기준 60세이상 고객님께 적용되는 이벤트 입니다.<br>
+                            ② 본인이 직접 신분증을 매표소에 제시해 주시기 바랍니다.<br>
+                            ③ 1일 1회 티켓을 구매하실 수 있으며, 양도나 판매하실 수 없습니다.<br>
+                            ④ 다른 할인과 중복 적용되지 않습니다.
+                        </dd>
+                    </dl>
+                </section>
+            </div>
+        </div>
+    </article>
+    </div>
+
+    <? include "../common/sub_foot.html" ?>
+
+    <!-- <script src="js/modal.js"></script> -->
+</body>
+
+</html>

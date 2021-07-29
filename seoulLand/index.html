@@ -1,0 +1,386 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+    
+?>
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>서울랜드</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./common/css/style.css">
+  <!--[if IE9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <? include "common/main_head.html" ?>
+
+  <!-- S : container-wrapper  -->
+  <div class="container-wrapper">
+    <div class="main-visual-wrap flex">
+      <ul class="visual-list">
+        <li class="active">
+          <a href="notice/view.php?table=notice&num=21&page=1"><img src="./common/img/main3.png" alt=""></a>
+        </li>
+        <li>
+          <a href="notice/view.php?table=notice&num=18&page=1"><img src="./common/img/main8.png" alt=""></a>
+        </li>
+        <li>
+          <a href="notice/view.php?table=notice&num=22&page=1"><img src="./common/img/main14.png" alt=""></a>
+        </li>
+      </ul>
+      <div class="btn-wrap flex">
+        <div class="visual-btn-wrap flex">
+          <button class="btn-dot btn1 active"></button>
+          <button class="btn-dot btn2"></button>
+          <button class="btn-dot btn3"></button>
+        </div>
+        <div class="visual-control">
+          <button class="btn-prev">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </button>
+          <button class="btn-next">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </button>
+          <button class="onoff">
+            <ion-icon name="pause-circle-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <article id="main-cont-wrap">
+      <h2 class="hidden">본문콘텐츠영역</h2>
+
+      <!-- <section class="sec-wrap">
+        <h3 class="hidden">운영시간</h3>
+        <div class="inner">
+          <a href="info/operation.html">
+            <p class="tit-md">
+              <ion-icon name="alarm-outline"></ion-icon> 운영시간 10:00 ~ 21:00
+            </p>
+          </a>
+        </div>
+      </section> -->
+
+
+      <section class="sec-wrap attraction-wrap">
+        <h3 class="hidden">어트랙션</h3>
+        <div class="main-video-wrap">
+          <video autoplay loop muted class="main-video">
+            <source src="./common/img/main-video.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="title-wrap">
+          <p class="main-tit"><span> 가족, 친구, 연인과 함께 즐기는 서울랜드!</span></p>
+          <p class="main-txt">다양한 어트랙션 & 페스티벌!</p>
+        </div>
+        <div class="cont-wrap">
+          <ul class="attraction-list flex col5">
+            <li>
+              <a href="enjoy/attraction.html?att=1">
+                <img src="./common/img/main-attraction-01.jpg" alt="">
+                <dl>
+                  <dt>회전목마</dt>
+                  <dd>#캐릭터타운</dd>
+                </dl>
+              </a>
+            </li>
+            <li>
+              <a href="enjoy/attraction.html?att=5">
+                <img src="./common/img/main-attraction-02.jpg" alt="">
+                <dl>
+                  <dt>블랙홀2000</dt>
+                  <dd>#미래의나라</dd>
+                </dl>
+              </a>
+            </li>
+            <li>
+              <a href="enjoy/attraction.html?att=9">
+                <img src="./common/img/main-attraction-03.jpg" alt="">
+                <dl>
+                  <dt>킹바이킹</dt>
+                  <dd>#모험의나라</dd>
+                </dl>
+              </a>
+            </li>
+            <li>
+              <a href="enjoy/attraction.html?att=3">
+                <img src="./common/img/main-attraction-04.jpg" alt="">
+                <dl>
+                  <dt>라바트위스터</dt>
+                  <dd>#캐릭터타운</dd>
+                </dl>
+              </a>
+            </li>
+            <li>
+              <a href="enjoy/attraction.html?att=6">
+                <img src="./common/img/main-attraction-05.jpg" alt="">
+                <dl>
+                  <dt>샷드롭</dt>
+                  <dd>#미래의나라</dd>
+                </dl>
+              </a>
+            </li>
+            <li>
+              <a href="enjoy/attraction.html?att=10">
+                <img src="./common/img/main-attraction-10.jpg" alt="">
+                <dl>
+                  <dt>해적소굴</dt>
+                  <dd>#모험의나라</dd>
+                </dl>
+              </a>
+            </li>
+            <li>
+              <a href="enjoy/attraction.html?att=2">
+                <img src="./common/img/main-attraction-06.jpg" alt="">
+                <dl>
+                  <dt>또봇트레인</dt>
+                  <dd>#캐릭터타운</dd>
+                </dl>
+              </a>
+            </li>
+            <li>
+              <a href="enjoy/attraction.html?att=4">
+                <img src="./common/img/main-attraction-07.jpg" alt="">
+                <dl>
+                  <dt>카트라이더범퍼</dt>
+                  <dd>#캐릭터타운</dd>
+                </dl>
+              </a>
+            </li>
+            <li>
+              <a href="enjoy/attraction.html?att=8">
+                <img src="./common/img/main-attraction-08.jpg" alt="">
+                <dl>
+                  <dt>달나라열차</dt>
+                  <dd>#미래의나라</dd>
+                </dl>
+              </a>
+            </li>
+            <li>
+              <a href="enjoy/attraction.html?att=7">
+                <img src="./common/img/main-attraction-09.jpg" alt="">
+                <dl>
+                  <dt>은하열차888</dt>
+                  <dd>#미래의나라</dd>
+                </dl>
+              </a>
+            </li>
+          </ul>
+          <a class="link" href="enjoy/attraction.html">더 많은 어트랙션 보기</a>
+        </div>
+      </section>
+
+      <section class="sec-wrap">
+        <h3 class="hidden">할인혜택</h3>
+        <div class="inner">
+          <div class="title-wrap">
+            <p class="main-tit"><span>맟춤 혜택에 대해 알아볼까요?</span></p>
+            <p class="main-txt">현재 진행중인 할인혜택을 놓치지 마세요.</p>
+          </div>
+          <div class="cont-wrap">
+            <ul class="benefit-list flex col4">
+              <li>
+                <a href="price/benefit.html?be=1">
+                  <img src="common/img/main-benefit-01.png" alt="">
+                  <dl>
+                    <dt class="tit-sm">어린이 + 동반 1인</dt>
+                    <dd class="txt-md">38,000원</dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="price/benefit.html?be=2">
+                  <img src="common/img/main-benefit-02.png" alt="">
+                  <dl>
+                    <dt class="tit-sm">중, 고등학생</dt>
+                    <dd class="txt-md">18,500원</dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="price/benefit.html?be=3">
+                  <img src="common/img/main-benefit-03.png" alt="">
+                  <dl>
+                    <dt class="tit-sm">연간이용권 추천인</dt>
+                    <dd class="txt-md">120,000원</dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="price/benefit.html?be=4">
+                  <img src="common/img/main-benefit-04.png" alt="">
+                  <dl>
+                    <dt class="tit-sm">대학생</dt>
+                    <dd class="txt-md">14,900원</dd>
+                  </dl>
+                </a>
+              </li>
+            </ul>
+            <a class="link" href="price/benefit.html">
+              더 많은 할인혜택 보기</a>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="sec-wrap card-wrap">
+        <h3 class="hidden">제휴카드</h3>
+        <div class="inner">
+          <div class="title-wrap">
+            <p class="main-tit"><span>제휴카드로 더 저렴하게!</span></p>
+            <p class="main-txt">합리적인 가격에 서울랜드를 이용하세요.</p>
+          </div>
+          <div class="cont-wrap">
+            <ul class="card-list flex">
+              <li>
+                <dl>
+                  <dt class="tit-sm">네이버페이 신한카드</dt>
+                  <dd>
+                    자유이용권 30% 할인
+                  </dd>
+                </dl>
+                <img src="./common/img/sub-card-01.png" alt="">
+              </li>
+              <li>
+                <dl>
+                  <dt class="tit-sm">카카오페이 신한 체크카드</dt>
+                  <dd>
+                    자유이용권 35% 할인
+                  </dd>
+                </dl>
+                <img src="./common/img/sub-card-02.png" alt="">
+              </li>
+              <li>
+                <dl>
+                  <dt class="tit-sm">카카오뱅크 신한카드</dt>
+                  <dd>
+                    자유이용권 50% 할인
+                  </dd>
+                </dl>
+                <img src="./common/img/sub-card-03.png" alt="">
+              </li>
+              <li>
+                <dl>
+                  <dt class="tit-sm">KB 국민 노리카드</dt>
+                  <dd>
+                    자유이용권 30% 할인
+                  </dd>
+                </dl>
+                <img src="./common/img/sub-card-04.png" alt="">
+              </li>
+              <li>
+                <dl>
+                  <dt class="tit-sm">카드의정석 COOKIE CHECK</dt>
+                  <dd>
+                    자유이용권 50% 할인
+                  </dd>
+                </dl>
+                <img src="./common/img/sub-card-05.png" alt="">
+              </li>
+              <li>
+                <dl>
+                  <dt class="tit-sm">카카오뱅크 삼성카드</dt>
+                  <dd>
+                    자유이용권 45% 할인
+                  </dd>
+                </dl>
+                <img src="./common/img/sub-card-06.png" alt="">
+              </li>
+              <li>
+                <dl>
+                  <dt class="tit-sm">SOL 딥드림 신한 체크카드</dt>
+                  <dd>
+                    자유이용권 45% 할인
+                  </dd>
+                </dl>
+                <img src="./common/img/sub-card-07.png" alt="">
+              </li>
+            </ul>
+            <div class="btn-slider">
+              <div class="thumb">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </div>
+            </div>
+            <a class="link" href="price/card.html">더 많은 제휴카드 보기</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec-wrap service-wrap">
+        <h3 class="hidden">고객센터</h3>
+        <div class="inner">
+          <div class="title-wrap">
+            <p class="main-tit"><span>서울랜드에 대해 더 알고싶다면?</span></p>
+            <p class="main-txt">오늘 서울랜드 소식을 만나보세요.</p>
+          </div>
+          <div class="cont-wrap flex">
+            <div class="info-wrap">
+              <p class="tit-sm">서울랜드 소식</p>
+              <ul>
+                
+              </ul>
+              <a href="notice/list.php" class="btn-more">
+                <ion-icon name="add-circle"></ion-icon>
+              </a>
+            </div>
+            <div class="info-wrap">
+              <p class="tit-sm">자주 하는 질문</p>
+              <ul>
+                <li><a href="notice/faq.html?faq=1">긴급 재난 지원금 사용이 가능한가요? <span class="txt-sm">이용안내</span></a></li>
+                <li><a href="notice/faq.html?faq=1">서울랜드에서도 문화상품권을 사용할 수 있나요? <span class="txt-sm">이용안내</span></a></li>
+                <li><a href="notice/faq.html?faq=2">놀이시설 운휴는 어디에서 확인 가능한가요? <span class="txt-sm">놀이시설</span></a></li>
+                <li><a href="notice/faq.html?faq=3">파크이용권과 자유이용권은 다른건가요? <span class="txt-sm">티켓</span></a></li>
+                <li><a href="notice/faq.html?faq=4">온라인으로 연간이용권을 구매했는데 어떻게 해야 하나요? <span
+                      class="txt-sm">연간이용권</span></a>
+                </li>
+                <li><a href="notice/faq.html?faq=3">종일권과 야간권은 어떻게 다른건가요? <span class="txt-sm">티켓</span></a></li>
+              </ul>
+              <a href="notice/faq.html" class="btn-more">
+                <ion-icon name="add-circle"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </article>
+  </div>
+
+  <? include "common/main_foot.html" ?>
+
+  <!-- Popup Notice -->
+  <!-- <div id="showimage" style="z-index:99;position:absolute;width:322px;left:50px;top:200px;">
+    <script>
+      function closeWin() {
+        var chk = document.getElementById('Notice')
+        if (chk.checked) {
+          setCookie("Notice", "done", 1);
+        }
+      }
+      if (getCookie("Notice") == "done") {
+        hidebox();
+      }
+    </script>
+    <div>
+      <img src="./images/popup.png"
+        alt="본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 만들어졌습니다. 홈페이지의 일부 내용과 기타 이미지 등은 그 출처가 따로 있음을 밝힙니다.">
+    </div>
+    <div style="font-size:12px;text-align:center;color:#fff;">
+      <input type="checkbox" name="Notice" id="Notice" value="" title="오늘은 이창을 열지 않음 선택상자"><label for="Notice">오늘은 이창을
+        열지 않음.</label>
+      <a href="#" onclick="closeWin();hidebox();return false;"> [close] </a>
+    </div>
+  </div> -->
+</body>
+
+</html>

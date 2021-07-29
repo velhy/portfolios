@@ -1,0 +1,264 @@
+.main {
+    position:relative; margin-top:49px; z-index: 99;
+}
+
+.main img {
+    width:100%; border-radius: 0 0 20px 20px
+}
+
+.main p {
+  position: absolute; width:90%; top:60%; left:50%; margin-left:-45%; color:#fff; text-align: center; line-height: 1.6em;
+}
+
+.main h3 {
+  position: absolute; z-index:999; width:140px; top:50%; left:50%; margin-left:-70px; font-size:18px; font-weight: 700; color:#fff; text-shadow: 2px 2px 5px #999; text-align: center;
+}
+
+#content h2 {
+ padding:10px 0; margin-top:20px; text-align: center; font-size: 20px; font-weight: 800;
+}
+
+/* #content {
+    margin:10px 16px 50px 16px
+} */
+
+
+/* 어트랙션 본문 */
+
+.map_img {
+    overflow: hidden; position:relative; border:2px solid #eee;  cursor: move
+  }
+  
+  .map_img img {
+    transition: all .3s
+  }
+  
+  .tab_box {
+    background:#fff; height:50px; padding:10px 0; transition: all .8s; 
+  }
+
+  .tab_menu {
+    overflow: hidden; margin-top:20px; background:#eee
+  }
+
+  .tab_menu a {
+    display:block; float:left;padding:10px 0; width: 33.33%; text-align: center; font-size: 13px
+  }
+
+  .tab_menu a.current {
+    background:#fe4365; color:#fff
+  }
+  
+  .navOn {
+    position:fixed; z-index: 100; width:100%; left:0; top:0; border-bottom:1px solid #ddd;
+  }
+  
+  .contlist {
+    display: none; margin-top:30px
+  }
+  
+  /* .map_inner {
+    margin: 0 auto; padding: 10px 0; width: 320px;
+  } */
+
+  
+  
+  #content>section>section {
+    margin: 30px 0;
+  }
+  
+  /* #content>section>section:nth-of-type(2) {
+    background: #f8f8f8
+  } */
+  
+  #content section {
+    position: relative; 
+  }
+
+  #content>section {
+    margin-top:40px
+  }
+
+  #content section h3 {
+      margin: 30px 0; text-align: center; font-size:18px; font-weight: 800;
+  }
+
+  #content section h4 {
+      margin-left:15px; margin-bottom:10px; font-weight: 700; font-size:17px
+  }
+  
+  #content .attr_list {
+    overflow: hidden; position: relative;
+  }
+  
+  #content .attr_list>li:not(.first_attr) {
+    float: left; position: relative; margin-bottom:40px;  width: 50%;  
+  }
+
+  #content .attr_list>li:not(.first_attr) a {
+      display:block; 
+  }
+
+  #content .attr_list>li:not(.first_attr) dl {
+    margin-left:15px
+  }
+
+  #content .attr_list>li:not(.first_attr) dd {
+    text-align: left;
+  }
+  
+  #content .attr_list img {
+    width: 100%
+  }
+  
+  #content .attr_list dl {
+    overflow: hidden; padding: 15px 0; text-align: left;
+  }
+  
+  #content .attr_list dt {
+    margin-bottom: 10px; font-weight: 700; font-size: 15px; 
+  }
+  
+  #content .attr_list dd {
+    font-size: 12px; line-height: 2em; text-align: left;
+  }
+  
+  #content .attr_list .first_attr {
+    overflow: hidden; margin: 0 auto 12px; padding: 15px;  background:#fff
+  }
+  
+  #content .attr_list .first_attr img {
+   width:100%
+  }
+  
+  #content .attr_list .first_attr dl {
+     margin-top:20px; border-top: 2px solid black;
+  }
+  
+  #content .attr_list .first_attr dt {
+    padding-bottom: 6px; font-size: 15px; font-weight: 700; text-align: left; 
+  }
+  
+  #content .attr_list .attr_list .first_attr dd {
+    font-size: 13px; line-height: 1.8em; text-align: justify;
+  }
+  
+  #content .attr_list .first_attr .info {
+    overflow: hidden; clear:both; margin-top:14px; width:100%; background:#eee
+  }
+  
+  #content .attr_list .first_attr .info li {
+    float: left; padding:14px 0;  width: 33.33%; font-size:12px; text-align: center;
+  }
+
+  #content .attr_list .first_attr .info li span {
+    display: block; font-size: 14px; font-weight: 700;
+  }
+
+  /* #content .attr_list .first_attr .info li a {
+  display:block; position: relative; padding-top:5px; margin:5px; background: #f5f5f5; 
+}
+  
+  #content .attr_list .first_attr .info li a::before {
+    content: ''; display: block; position: absolute; top: 16px; left: 50%; margin-left: -18px; width: 40px; height: 40px;
+  }
+  
+  
+  #content .attr_list .first_attr .info li:nth-of-type(1) a::before {
+    background: url(../images/info1_320.png); background-size: 40px
+  }
+  
+  #content .attr_list .first_attr .info li:nth-of-type(2) a::before {
+    background: url(../images/info3_320.png); background-size: 40px
+  }
+  
+  #content .attr_list .first_attr .info li:nth-of-type(3) a::before {
+    background: url(../images/info2_320.png); background-size: 40px
+  } */
+  
+
+  #content .map_inner {
+      width:100%; position: relative;
+  }
+
+  #content .attr_map {
+     position: relative; margin: 0 auto; padding:15px; background: #fff; 
+  }
+  
+  #content .attr_map img {
+    overflow:hidden; width:100%; 
+  }
+  
+  #content .attr_map .plus, #content  .attr_map .minus {
+    display: block; position: absolute; bottom: 65px; right: 30px; width: 15px; height: 15px; 
+  }
+  
+  #content .attr_map .minus {
+    bottom:30px;
+  }
+  
+  #content .attr_map i {
+    padding: 6px; background: rgba(255,255,255,.8); color: #333; border: 1px solid #ddd; transition: all .5s;
+  }
+  
+  
+  #content .attr_map ol {
+    overflow:hidden; margin-top: 16px; width: 100%; 
+  }
+  
+  #content .attr_map ol li {
+    float:left; position: relative; width:50%; text-align: left; margin:6px 0
+  }
+
+  
+  #content .attr_map ol li a.current {
+    color:#fe4365; font-weight: 700;
+  }
+  
+  /* #content#content .attr_map ol li::before {
+    content: ""; display: block; position: absolute; left: 60px; top: 0; width: 30px; height: 30px; 
+  }
+  
+  #content#content .attr_map ol li:first-of-type::before {
+    background: url(../images/one.png) no-repeat; background-size: 30px;
+  }
+  
+  #content#content .attr_map ol li:nth-of-type(2)::before {
+    background: url(../images/content1/two.png) no-repeat; background-size: 28px;
+  }
+  
+  #content .attr_map ol li:nth-of-type(3)::before {
+    background: url(../images/content1/three.png) no-repeat; background-size: 28px;
+  }
+  
+  #content .attr_map ol li:nth-of-type(4)::before {
+    background: url(../images/content1/four.png) no-repeat; background-size: 28px;
+  }
+  
+  #content .attr_map ol li:nth-of-type(5)::before {
+    background: url(../images/content1/five.png) no-repeat; background-size: 28px;
+  }
+  
+  #content .attr_map ol li:nth-of-type(6)::before {
+    background: url(../images/content1/six.png) no-repeat; background-size: 28px;
+  }
+  
+  #content .attr_map ol li:nth-of-type(7)::before {
+    background: url(../images/content1/seven.png) no-repeat; background-size: 28px;
+  } */
+
+
+  /* @media screen and (-webkit-min-device-pixel-ratio: 2) {
+    #content .attr_list .first_attr .info li:nth-of-type(1) a::before {
+        background: url(../images/info1_640.png) no-repeat; background-size: 40px
+      }
+      
+      #content .attr_list .first_attr .info li:nth-of-type(2) a::before {
+        background: url(../images/info3_640.png) no-repeat; background-size: 40px
+      }
+      
+      #content .attr_list .first_attr .info li:nth-of-type(3) a::before {
+        background: url(../images/info2_640.png) no-repeat; background-size: 40px
+      }
+
+} */

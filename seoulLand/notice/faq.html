@@ -1,0 +1,233 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>FAQ | 서울랜드</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../common/css/style.css">
+
+    <!--[if IE9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <? include "../common/sub_head.html" ?>
+    <? include "../common/sub-service.html" ?>
+
+    <article id="sub-cont-wrap">
+        <h2 class="page-title">자주 하는 질문</h2>
+        <div class="page-cont faq-cont">
+            <div class="tab-wrap">
+                <ul class="tab-list">
+                    <li><a href="javascript:void(0)" class="tab tab1 active">이용안내</a></li>
+                    <li><a href="javascript:void(0)" class="tab tab2">놀이시설</a></li>
+                    <li><a href="javascript:void(0)" class="tab tab3">티켓</a></li>
+                    <li><a href="javascript:void(0)" class="tab tab4">연간이용권</a></li>
+                </ul>
+            </div>
+            <div class="inner">
+                <section class="tab-con">
+                    <h3 class="tit">이용안내</h3>
+                    <ul class="qna-list">
+                        <li>
+                            <button class="question">
+                                <span class="ico">Q</span>
+                                <span>긴급 재난 지원금 사용이 가능한가요?</span>
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                            </button>
+                            <p class="answer txt-md">
+                                고객님의 주민등록상 거주지가 경기도인 경기도민의 경우,
+                                신용·체크카드로 지급된정부 긴급재난지원금만 결제가 가능합니다.
+                                지역화폐는 사용할 수 없으며 선불카드의 경우 지자체별 사용범위가 상이하여
+                                해당 시청에 직접 확인하셔야 합니다.
+                                또한 지역 재난지원금의 경우 사용이 불가함을 안내드립니다.
+                                감사합니다.
+                            </p>
+                        </li>
+                        <li>
+                            <button class="question">
+                                <span class="ico">Q</span>
+                                <span>36개월 미만 어린이를 위한 별도의 이용혜택이 있나요?</span>
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                            </button>
+                            <p class="answer txt-md">
+                                36개월 미만 어린이는 무료입장이 가능하며 어린이의 생년월일을 확인 할 수 있는 증빙 서류(건강보험증, 주민등록본 사본 등)를 지참하셔야
+                                합니다.
+                                또한 36개월 미만 어린이의 놀이시설 이용은 보호자께서 파크이용권을 구입하시면 보호자의 이용권으로 이용할 수 있도록 서비스 해드리고 있습니다. 36개월 미만
+                                어린이라
+                                할지라도 키 80cm 이상이면 어린이 단독탑승 또는 보호지 동반하에 이용할 수 있는 놀이시설들이 있으니 서울랜드 홈페이지를 참고해주시길 바랍니다.
+                            </p>
+                        </li>
+                        <li>
+                            <button class="question">
+                                <span class="ico">Q</span>
+                                <span>서울랜드에서도 문화상품권을 사용할 수 있나요?</span>
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                            </button>
+                            <p class="answer txt-md">
+                                네 사용 가능합니다. 문화상품권(컬쳐랜드 발행) 뿐만 아니라 홈플러스상품권, 국민관광상품권(한국관광협회중앙회), 롯데백화점상품권을 서울랜드 매표소, 음식점,
+                                상점에서 현금처럼
+                                사용하실 수 있습니다.
+                                단, 코인 시설에서는 사용하실 수 없습니다.
+                            </p>
+                        </li>
+                        <li>
+                            <button class="question">
+                                <span class="ico">Q</span>
+                                <span>물건을 잃어버렸는데 어떻게 해야 할까요?</span>
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                            </button>
+                            <p class="answer txt-md">
+                                서울랜드 분실물센터(02-509-6000)로 연락을 주세요.
+                                공원안에서 발견된 잃어버린 물품은 분실물센터로 모아집니다.
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="tab-con">
+                    <h3 class="tit">놀이시설</h3>
+                    <ul class="qna-list">
+                        <li>
+                            <button class="question">
+                                <span class="ico">Q</span>
+                                <span>놀이시설 운휴는 어디에서 확인하나요?</span>
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                            </button>
+                            <p class="answer txt-md">
+                                서울랜드의 놀이시설은 기본적으로 365일 운영됩니다.
+                                다만 점검 및 보수를 위해 운휴에 들어가는 시설이 있으며, 날씨가 춥거나 눈.비가 내리는 기상조건하에서 안전을 위해 운영을 중지하는 경우가 발생할 수
+                                있습니다.
+                                출발하시기 전 홈페이지 또는 콜센터(02-509-6000)를 통해 확인하시면 보다 정확한 정보를 확인하실 수 있습니다.
+                            </p>
+                        </li>
+                        <li>
+                            <button class="question">
+                                <span class="ico">Q</span>
+                                <span>놀이시설 운영은 날씨와 상관없이 가능한가요?</span>
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                            </button>
+                            <p class="answer txt-md">
+                                서울랜드 놀이시설의 운영은 날씨의 영향을 받습니다.
+                                내리는 비, 눈의 양에 따라 운영이 제한 될 수 있으며, 바람, 온도, 습도 등 기상 상황에 따라 놀이시설 운영이 제한 될 수 있습니다.
+                            </p>
+                        </li>
+                        <li>
+                            <button class="question">
+                                <span class="ico">Q</span>
+                                <span>36개월 미만 어린이가 이용할 수 있는 놀이시설은 무엇인가요?</span>
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                            </button>
+                            <p class="answer txt-md">
+                                서울랜드 놀이시설은 고객님의 안전한 이용을 위해 이용제한이 마련되어 있습니다.
+                                베스트키즈을 제외한 모든 놀이시설은 연령제한이 아닌 신장제한 이므로 놀이시설의 탑승 가능 신장을 확인하시어 이용해주시기 바랍니다.
+                                * 베스트키즈 이용 가능 연령 : 10세 이하(만 9세) 이용 가능
+                            </p>
+                        </li>
+                        <li>
+                            <button class="question">
+                                <span class="ico">Q</span>
+                                <span>36개월 미만의 어린이와 함께 가는데 놀이시설마다 티켓을 구매해야 하나요?</span>
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                            </button>
+                            <p class="answer txt-md">
+                                서울랜드는 현재 자유이용권만 판매중에 있습니다.
+                                입장하실 때 어린이 손님의 생년월일이 적힌 증빙서류를 보여주시고 입장하셨다면 공원 내 에서는 추가적인 티켓 확인이 없기 때문에 추가적으로 구매하지 않으셔도
+                                이용이 가능합니다.
+                                다만, 놀이시설 마다 이용제한이 마련되어 있기 때문에 이용 전 이용제한 확인을 부탁드립니다.
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="tab-con">
+                    <h3 class="tit">티켓</h3>
+                    <ul class="qna-list">
+                        <li>
+                            <button class="question">
+                                <span class="ico">Q</span>
+                                <span>온라인에서 구매하면 QR코드 문자로 바로 입장할 수 있나요?</span>
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                            </button>
+                            <p class="answer txt-md">
+                                고객님께서 구매하신 상품이 QR코드 문자로 오는 상품이라면 바로 게이트에서 확인 후 입장이 가능합니다.
+                                다만, 현장에서 교환해야 하는 상품이라면 현장 매표소에서 발권 후 입장이 가능하오니 고객님께서 구매하신 상품에 대한 내용을 꼭 확인해주시기 바랍니다.
+                            </p>
+                        </li>
+                        <li>
+                            <button class="question">
+                                <span class="ico">Q</span>
+                                <span>파크이용권과 자유이용권은 다른건가요?</span>
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                            </button>
+                            <p class="answer txt-md">
+                                파크이용권과 자유이용권은 서울랜드 내 유료 시설을 제외한 모든 놀이시설 이용이 자유롭게 이용할 수 있는 동일한 티켓입니다.
+                            </p>
+                        </li>
+                        <li>
+                            <button class="question">
+                                <span class="ico">Q</span>
+                                <span>종일권과 야간권은 어떻게 다른건가요?</span>
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                            </button>
+                            <p class="answer txt-md">
+                                종일권은 개장시간부터 폐장시간까지 이용이 가능하며, 야간권은 4시 이후에 입장하여 폐장시간까지 이용이 가능한 티켓입니다.
+                            </p>
+                        </li>
+                        <li>
+                            <button class="question">
+                                <span class="ico">Q</span>
+                                <span>야간권을 구매했는데 조금 더 일찍 가면 입장이 가능한가요?</span>
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                            </button>
+                            <p class="answer txt-md">
+                                4시 이후부터 입장이 가능한 야간권을 구매하셨다면 입장시간 10분 전인 3시 50분에는 입장이 가능하지만 그보다 일찍 방문하실 경우 입장이 되지 않습니다.
+                                시간보다 일찍 방문하실 경우에는 시간에 맞는 티켓을 구매해주시기 바랍니다.
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="tab-con">
+                    <h3 class="tit">연간이용권</h3>
+                    <ul class="qna-list">
+                        <li>
+                            <button class="question">
+                                <span class="ico">Q</span>
+                                <span>연간이용권증을 두고 온 경우(또는 잃어버린 경우)에는 어떻게 해야 하나요?</span>
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                            </button>
+                            <p class="answer txt-md">
+                                연간이용권센터로 방문하시어 본인 확인 후 재발급이 가능하며, 재발급 수수료(2,000원)가 부과됩니다. (카드 결제 가능)
+                            </p>
+                        </li>
+                        <li>
+                            <button class="question">
+                                <span class="ico">Q</span>
+                                <span>온라인으로 연간이용권을 구매했는데 어떻게 해야 하나요?</span>
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                            </button>
+                            <p class="answer txt-md">
+                                결제 후 수신한 LMS문자(또는 알림톡)를 지참하시어 연간이용권센터에 성함, 휴대폰번호와 함께 제시 바랍니다.
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </article>
+    </div>
+    <? include "../common/sub_foot.html" ?>
+</body>
+
+</html>

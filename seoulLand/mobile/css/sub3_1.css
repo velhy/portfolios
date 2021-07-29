@@ -1,0 +1,231 @@
+html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+.main {
+    position:relative; margin-top:49px; z-index: 99;
+}
+
+.main img {
+    width:100%; border-radius: 0 0 20px 20px
+}
+
+.main p {
+    position: absolute; width:90%; top:60%; left:50%; margin-left:-45%; color:#fff; text-align: center; 
+}
+
+.main h3 {
+    position: absolute; z-index:999; width:140px; top:50%; left:50%; margin-left:-70px; font-size:18px; font-weight: 700; color:#fff; text-shadow: 2px 2px 5px #999; text-align: center;
+}
+
+#content h2 {
+    margin-top:20px; text-align: center; font-size: 20px; font-weight: 800;
+}
+
+section .swiper-container {
+    margin-top:20px;
+    width: 100%;
+    height: 100%; 
+  }
+
+
+  section .swiper-slide {
+
+    text-align: center;
+    font-size: 14px; line-height: 1.8em;
+    
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  section .swiper-slide span {
+      padding:20px; background: #ffaaba; color:#fff; border-radius:10px
+  }
+
+  section .swiper-pagination {
+      position: relative; bottom: 0; padding:10px 0
+  }
+  
+
+  #content {
+    margin:20px 16px 50px 16px
+}
+
+section {
+    text-align: left; margin: 30px 0
+}
+
+
+
+section h3 {
+    position: relative; margin-bottom: 40px; text-align: center; font-size: 18px; font-weight: 700;
+}
+
+#content h3::after {
+    display: block; content: ''; position: absolute; top: 32px; left: 50%; margin-left: -17px; width: 34px; height: 2px; background: #fe4365; 
+}
+
+section dl {
+    margin: 80px 0; font-size: 18px; line-height: 1.8em; 
+}
+
+section dt {
+    margin-bottom: 80px; font-size: 20px; font-weight: 700; 
+}
+
+section dt:nth-of-type(2) {
+    margin-top: 80px;
+}
+
+section ol {
+    overflow: hidden;
+}
+
+section .east {
+    margin: 0 auto; width: 1018px; 
+}
+
+section ol li {
+    float: left; position: relative; margin: 0 100px 50px 0; width: 190px; height: 190px; background: #fff; border: 8px solid #fca2b3; border-radius: 50%; text-align: center;
+}
+
+section .east li {
+    width: 190px; margin:0 200px 50px 0;
+}
+
+section .front {
+    overflow: hidden; position: relative; width:1124px; margin:0 auto
+}
+
+
+section ol li span:first-of-type {
+    display: block; position: relative; top: 15%; width: 30px; left: 50%; margin-left: -15px; border-bottom: 4px solid #fe4365; color: #fe4365; font-weight: 700;
+}
+
+section ol li span:nth-of-type(2) {
+    display: block; position: relative; top: 28%; width: 130px; left: 50%; margin-left: -65px;
+}
+
+section ol li::after {
+    content: ''; display: block; position: absolute; top: 35px; left: 260px; width: 24px; height: 24px; 
+    /* background: url(../images/content1/arrow.png) no-repeat; background-size: 24px; */
+}
+
+section .east li::after {
+    left: 300px
+}
+
+section .front li:nth-of-type(4), section .east li:nth-of-type(3) {
+    margin-right: 0;
+}
+
+section .front li:nth-of-type(5) {
+    margin-left: 170px
+}
+
+section .east li:nth-of-type(4) {
+    margin-left:200px
+}
+
+section ol li:last-of-type::after {
+    display: none;
+}
+
+section h4 {
+   margin-bottom:20px; font-size:17px; font-weight: 700;
+}
+
+/* section h4 {
+    position:relative; padding-left:40px; margin-bottom: 30px; font-size: 22px; 
+}
+
+section>section h4::before {
+    content:''; display: block; position: absolute; top:0; left:0; width:30px; height:30px; 
+}
+
+section>section:nth-of-type(1) h4::before {
+    background:url(../images/content1/number1.png) no-repeat; background-size: 30px;
+}
+
+section>section:nth-of-type(2) h4::before {
+    background:url(../images/content1/number2.png) no-repeat; background-size: 30px;
+}
+section>section:nth-of-type(3) h4::before {
+    background:url(../images/content1/number3.png) no-repeat; background-size: 30px;
+}
+section>section:nth-of-type(4) h4::before {
+    background:url(../images/content1/number4.png) no-repeat; background-size: 30px;
+}
+section>section:nth-of-type(5) h4::before {
+    background:url(../images/content1/number5.png) no-repeat; background-size: 30px;
+} */
+
+section .prohibit {
+    margin-top: 30px; overflow: hidden; 
+}
+
+section .prohibit li {
+    float: left;  width: 50%;  text-align: center; font-size: 14px
+}
+
+section .prohibit li p {
+    margin-top: 15px; padding: 0 6px; line-height: 1.8em; text-align: center; font-size:15px
+}
+
+section .prohibit img {
+    display: block; margin: 15px auto 0; width: 70px; height: 70px; background: #eee; border-radius: 50%;
+}
+
+section .prohibit li>div {
+    display: block; margin:10px; border:1px solid #eee;  background: #f8f8f8; height:200px
+}
+
+section .prohibit p>span {
+    display:block; color:#fe4365; margin-top:8px
+}
+
+section>p {
+    position: relative; padding-left: 20px; margin: 8px 0; font-size: 14px; line-height: 1.8em;
+}
+
+section>p>span {
+    display: block; color:#fe4365; margin-top:5px
+}
+
+section>p::before, section .ban li::before {
+    display: block; content: ''; position: absolute; left: 0; top: 10px; width: 6px; height: 6px;  background: #ccc; border-radius: 50%; font-weight: normal;
+}
+
+section .ban {
+    overflow:hidden;  padding: 10px 0; 
+}
+
+section .ban li {
+    position: relative; margin:10px 0; width:100%;   font-size: 14px; line-height: 1.8em;
+}
+
+section .ban li>span {
+    display: block; padding:10px 20px; background:#f8f8f8; border:1px solid #eee;
+}
+
+section .ban li::before {
+    display: none;
+}
+
+section .ban li i {
+    margin-right: 10px
+}

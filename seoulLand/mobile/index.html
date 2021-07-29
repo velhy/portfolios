@@ -1,0 +1,268 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+
+
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name = "format-detection" content = "telephone=no"/>    <!-- 아이폰 전화번호 일반 텍스트로 -->
+<title>서울랜드</title>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link rel="apple-touch-icon-precomposed" href="app_icon.png">
+<link rel="apple-touch-startup-image" href="startup.png">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/flexslider.css">
+<link rel="stylesheet" href="css/swiper.css">
+<link rel="stylesheet" href="fontello/css/fontello.css">
+<!-- <link rel="stylesheet" href="css/appstore.css"> -->
+<script src="js/prefixfree.min.js"></script>
+<script src="https://kit.fontawesome.com/58ed643491.js" crossorigin="anonymous"></script>
+
+<script>
+  // <![CDATA[
+  try {
+   window.addEventListener('load', function(){
+    setTimeout(scrollTo, 0, 0, 1); 
+   }, false);
+  } 
+  catch(e) {}
+  // ]]>
+ </script>
+ <!--[if lt IE 9]> 
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+  <? include "head.html" ?>
+
+  <div class="main">
+    <div class="flexslider">
+      <ul class="slides">
+        <li>
+          <img src="images/vsm1_640.jpg" alt="">
+          <p>낮에는 서울랜드 <br> 밤에는 루나파크</p>
+              </li>
+              <li>
+                <img src="images/vsm2_640.jpg" alt="">
+              </li>
+              <li>
+                <img src="images/vsm3_640.jpg" alt="">
+                <p>몬스터시티 <br><span>9월 coming soon!</span></p>
+              </li>
+      </ul>
+   </div>
+  </div>
+
+    <article id="content">
+      <h2 class="hidden">본문콘텐츠영역</h2>
+
+      <!-- <div class="open_hours">
+        <h3><a href="#"><i class="far fa-clock"></i> 운영시간 10:00 - 21:00</a></h3>
+      </div> -->
+
+
+      <div class="promotion">
+        <h3><span>나에게 꼭 맞는 혜택</span> 알아볼까요?</h3>
+        <ul class="promo_list">
+          <li><a href="sub4_2.html?a=1"><img src="images/promo1_640.jpg" alt=""><span>어린이 + 동반 1인</span>38,000원</a></li>
+          <li><a href="sub4_2.html?a=2"><img src="images/promo2_640.jpg" alt=""><span>중, 고등학생</span>18,500원</a></li>
+          <li><a href="sub4_2.html?a=3"><img src="images/promo3_640.jpg" alt=""><span>생일축하 파크이용권</span>23,000원</a></li>
+          <li><a href="sub4_2.html?a=4"><img src="images/promo4_640.jpg" alt=""><span>에어서울 탑승권 소유자</span>50% OFF</a></li>
+        </ul>
+        <a href="sub4_2.html" class="more">할인혜택 더보기</a>
+      </div>
+
+
+      <div class="attraction">
+      <h3><span>남녀노소 누구나 즐길 수 있는</span> 어트랙션!</h3>
+      <div class="swiper-container swiper1">
+
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><a href="sub2_1.html?a=1">
+            <img src="images/at10_640.jpg" alt="">
+            <dl>
+              <dt>회전목마</dt>
+              <dd><span>#환상의나라</span> <span>#가족과함께</span></dd>
+            </dl>
+          </a></div>
+          <div class="swiper-slide"><a href="sub2_1.html?a=1">
+            <img src="images/at3_640.png" alt="">
+            <dl>
+              <dt>또봇트레인</dt>
+              <dd><span>#환상의나라</span> <span>#아이와함께</span></dd>
+            </dl>
+          </a></div>
+          <div class="swiper-slide"><a href="sub2_1.html?a=2">
+            <img src="images/at5_640.jpg" alt="">
+            <dl>
+              <dt>스카이엑스</dt>
+              <dd><span>#미래의나라</span> <span>#스릴넘치게</span></dd>
+            </dl>
+          </a></div>
+          <div class="swiper-slide"><a href="sub2_1.html?a=2">
+            <img src="images/at8_640.jpg" alt="">
+            <dl>
+              <dt>엑스플라이어</dt>
+              <dd><span>#미래의나라</span> <span>#스릴</span></dd>
+            </dl>
+          </a></div>
+          <div class="swiper-slide"><a href="sub2_1.html?a=3">
+            <img src="images/at9_640.jpg" alt="">
+            <dl>
+              <dt>킹바이킹</dt>
+              <dd><span>#모험의나라</span> <span>#친구와함께</span></dd>
+            </dl>
+          </a></div>
+          <div class="swiper-slide"><a href="sub2_1.html?a=3">
+            <img src="images/at7_640.jpg" alt="">
+            <dl>
+              <dt>요술의집</dt>
+              <dd><span>#모험의나라</span> <span>#아이와함께</span></dd>
+            </dl>
+          </a></div>
+          <!-- Add Pagination -->
+    
+        </div>
+        <div class="swiper-pagination"></div>
+        
+      </div>
+
+      <a href="sub2_1.html" class="more">어트랙션 더보기</a>
+    </div>
+
+      
+      <div class="card">
+      <h3>서울랜드와 카드사의 제휴서비스로<br> <span>더 저렴하게!</span></h3>
+      <div class="swiper-container swiper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/c1_640.png" alt="">
+            <dl>
+              <dt>네이버페이 라인프렌즈 신한카드</dt>
+              <dd>자유이용권 30% 할인<br>
+                (본인에 한함. 전 놀이공원 1일 1회)</dd>
+            </dl>
+          </div>
+          <div class="swiper-slide"><img src="images/c2_640.png" alt="">
+            <dl>
+              <dt>카카오페이 신한 체크카드</dt>
+              <dd>자유이용권 35% 할인<br>
+                (본인에 한함. 전 놀이공원 1일 1회)</dd>
+            </dl>
+          </div>
+          <div class="swiper-slide"><img src="images/c3_640.png" alt="">
+            <dl>
+              <dt>카카오뱅크 신한카드</dt>
+              <dd>자유이용권 50% 할인<br>
+                (본인에 한함. 전 놀이공원 1일 1회)</dd>
+            </dl>
+          </div>
+          <div class="swiper-slide"><img src="images/c5_640.png" alt="">
+            <dl>
+              <dt>삼성카드 4 V3</dt>
+              <dd>자유이용권 50% 할인<br>
+                (본인에 한함. 전 놀이공원 1일 1회)</dd>
+            </dl>
+          </div>
+          <div class="swiper-slide"><img src="images/c4_640.png" alt="">
+            <dl>
+              <dt>SOL Deep Dream 신한카드 체크</dt>
+              <dd>자유이용권 30% 할인<br>
+                (본인에 한함. 전 놀이공원 1일 1회)</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <a href="sub4_3.html" class="more">제휴카드 더보기</a>
+    </div>
+
+
+      <div class="festival">
+        <h3>함께 즐기는 <span>연간축제</span></h3>
+        <ul class="fest_list">
+          
+          <li>
+            <img src="images/fest_17.jpg" alt="">
+            <div>
+            <dl>
+              <dt>몬스터시티</dt>
+              <dd>귀염뽀짝 몬스터들이 할로윈을 맞이하여 서울랜드로 찾아왔어요!</dd>
+              <dd><a href="sub2_2.html">자세히보기</a></dd>
+            </dl>
+          </div>
+          </li>
+          <li>
+            <img src="images/fest_18.jpg" alt="">
+            <div>
+            <dl>
+              <dt>크리스마스 대축제</dt>
+              <dd>가족, 연인, 친구 모두가 즐거운 서울랜드 크리스마스 대축제!</dd>
+              <dd><a href="sub2_2.html">자세히보기</a></dd>
+            </dl> 
+          </div>
+          </li>
+        </ul>
+      </div>
+
+
+    </article>
+
+    <? include "foot.html" ?>
+
+<script src="js/jquery.flexslider.js"></script>
+
+<!-- 플랙스 슬라이더 호출코드 -->
+<script>
+  // $(function(){
+  //   SyntaxHighlighter.all();
+  // });
+  $(window).load(function(){
+    $('.flexslider').flexslider({
+      animation: "slide"
+    });
+  });
+</script>
+
+<!-- 제이쿼리 여기에 계속 추가 -->
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+var swiper = new Swiper('.swiper1', {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      pagination: {
+        el: '.swiper-pagination',
+        dynamicBullets: true,
+      },
+    
+
+
+    });
+
+
+    var swiper = new Swiper('.swiper2', {
+      slidesPerView: 'auto',
+      
+      centeredSlides: true
+      
+    });
+  
+</script>
+
+</body>
+</html>

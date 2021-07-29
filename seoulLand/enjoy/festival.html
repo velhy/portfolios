@@ -1,0 +1,95 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>연간축제 | 서울랜드</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../common/css/style.css">
+    <!--[if IE9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <? include "../common/sub_head.html" ?>
+    <? include "../common/sub-enjoy.html" ?>
+
+    <!-- content -->
+    <article id="sub-cont-wrap">
+        <h2 class="page-title">페스티벌</h2>
+        <div class="page-cont">
+            <div class="inner">
+                <ul class="festival-list col1">
+                    <li>
+                        <img src="../common/img/sub_fest_01.jpg" alt="">
+                        <dl>
+                            <dt class="tit-md">루나 피에스타</dt>
+                            <dd class="txt-location">지구별무대</dd>
+                            <dd class="txt-md">
+                                세상에 없던 빛이 쏟아진다!
+                                심장을 울리는 강렬한 음악과 3D 맵핑, 영상, 특수효과
+                                그리고 레이저쇼가 어우러진 환상적인 미디어 인터랙티브 쇼! <br>
+                                *날씨 및 공원 사정에 의해 공연은 변경 및 취소 될 수 있습니다.
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="../common/img/sub_fest_02.jpg" alt="">
+                        <dl>
+                            <dt class="tit-md">루나 버스킹</dt>
+                            <dd class="txt-location">베니스무대</dd>
+                            <dd class="txt-md">
+                                서울랜드의 낭만을 물들일 청춘 힐링 음악 버스킹 공연 <br>
+                                *날씨 및 공원 사정에 의해 공연은 변경 및 취소 될 수 있습니다.
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="../common/img/sub_fest_03.jpg" alt="">
+                        <dl>
+                            <dt class="tit-md">워터워즈</dt>
+                            <dd class="txt-location">지구별무대</dd>
+                            <dd class="txt-md">
+                                무더운 여름을 시원하게 날려줄 쿨 워터 타임! 신나는 음악과 함께하늘에서 떨어지는 시원한 물을 맞으면서 더위를 날려보세요!
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="../common/img/sub_fest_04.jpg" alt="">
+                        <dl>
+                            <dt class="tit-md">몬스터 시티</dt>
+                            <dd class="txt-location">세계의광장</dd>
+                            <dd class="txt-md"><span>귀염뽀짝 몬스터들</span>이 할로윈을 맞이하여 서울랜드로 찾아왔어요!
+                                오싹하지만 귀엽고 사랑스러운 유령들이 가득한 서울랜드~
+                                할로윈 몬스터들이 벌이는 으슬으슬 무시무시한 축제에 <span>여러분을 초대합니다!</span></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="../common/img/sub_fest_05.jpg" alt="">
+                        <dl>
+                            <dt class="tit-md">크리스마스 대축제</dt>
+                            <dd class="txt-location">세계의광장</dd>
+                            <dd class="txt-md">서울랜드에서는 <span>매일 매일이 크리스마스~</span>
+                                마음까지 따뜻해지는 크리스마스 축제에서 <span>로맨틱한 추억을 만들어보세요!</span>
+                                가족, 연인, 친구 모두가 즐거운 서울랜드 크리스마스 대축제!</dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </article>
+    </div>
+
+    <? include "../common/sub_foot.html" ?>
+    <!-- <script src="./js/festival.js"></script> -->
+</body>
+
+</html>

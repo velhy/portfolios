@@ -1,0 +1,1163 @@
+<?
+	  session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>어트랙션 | 서울랜드</title>
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../common/css/swiper-min.css">
+  <link rel="stylesheet" href="../common/css/style.css">
+
+  <!--[if IE9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <? include "../common/sub_head.html" ?>
+  <? include "../common/sub-enjoy.html" ?>
+
+  <article id="sub-cont-wrap">
+    <h2 class="page-title">어트랙션</h2>
+    <div class="page-cont">
+      <div class="tab-wrap">
+        <ul class="tab-list">
+          <li><a href="javascript:void(0)" class="tab tab1 active">캐릭터타운</a></li>
+          <li><a href="javascript:void(0)" class="tab tab2">미래의나라</a></li>
+          <li><a href="javascript:void(0)" class="tab tab3">모험의나라</a></li>
+        </ul>
+      </div>
+      <div class="inner">
+        <section class="tab-cont">
+          <h3 class="tit">캐릭터타운</h3>
+          <ul class="attraction-list flex col3">
+            <li>
+              <a href="javascript:void(0)">
+                <img src="../common/img/sub-attraction-01.jpg" alt="">
+                <span class="tit-sm">회전목마</span>
+                <span class="btn-circle-more">
+                  <span class="hidden">자세히 보기</span>
+                  <ion-icon name="add-outline"></ion-icon>
+                </span>
+              </a>
+              <div class="modal-wrap">
+                <div class="swiper-container mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../common/img/sub_att_01.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../common/img/sub_att_02.jpg" alt=""></div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <div class="att-info-wrap">
+                  <p class="tit-md">회전목마</p>
+                  <p class="txt">놀이공원의 절대적 상징물 ‘회전목마' 너무나도 예쁜 동화의 세계에 있는 듯한 느낌!
+                    난 하얀 말, 엄마, 아빠는 검정말, 할머니, 할아버지는 꽃마차~온 가족이 음악에 맞춰 함께 떠나는 환상적인 여행!
+                  </p>
+                  <ul class="attraction-info">
+                    <li>
+                      <ion-icon name="people-outline"></ion-icon>
+                      <span class="tit-sm">탑승인원</span>
+                      <span class="txt-md">목마 60필 × 마차 2대 4인 = 68인</span>
+                    </li>
+                    <li>
+                      <ion-icon name="body-outline"></ion-icon>
+                      <span class="tit-sm">이용정보</span>
+                      <span class="txt-md">100cm 이상</span>
+                    </li>
+                    <li>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <span class="tit-sm">운행시간</span>
+                      <span class="txt-md">약 2분 30초</span>
+                    </li>
+                  </ul>
+                  <div class="attraction-map">
+                    <p class="tit-sm">위치정보</p>
+                    <div class="map-wrap"></div>
+                    <div class="btn-pm-wrap">
+                      <button class="plus">
+                        <ion-icon name="add-outline"></ion-icon>
+                      </button>
+                      <button class="minus">
+                        <ion-icon name="remove-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                  <button class="btn-close circle">
+                    <ion-icon name="close-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <img src="../common/img/sub-attraction-02.jpg" alt="">
+                <span class="tit-sm">또봇트레인</span>
+                <span class="btn-circle-more">
+                  <span class="hidden">자세히 보기</span>
+                  <ion-icon name="add-outline"></ion-icon>
+                </span>
+              </a>
+              <div class="modal-wrap">
+                <div class="swiper-container mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../common/img/sub_att_03.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../common/img/sub_att_04.jpg" alt=""></div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <div class="att-info-wrap">
+                  <p class="tit-md">또봇트레인</p>
+                  <p class="txt">TV에서만 보았던 또봇 에볼루션 Y를 직접 놀이기구로 만나고~ 실제 크기(6M) 또봇 에볼루션 X와 사진 촬영도 찰칵! <br>
+                    * 아직 끝난 게 아니랍니다. 또봇 트레인은 두 바퀴를 돌거든요.
+                  </p>
+                  <ul class="attraction-info">
+                    <li>
+                      <ion-icon name="people-outline"></ion-icon>
+                      <span class="tit-sm">탑승인원</span>
+                      <span class="txt-md">20인</span>
+                    </li>
+                    <li>
+                      <ion-icon name="body-outline"></ion-icon>
+                      <span class="tit-sm">이용정보</span>
+                      <span class="txt-md">100cm 이상</span>
+                    </li>
+                    <li>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <span class="tit-sm">운행시간</span>
+                      <span class="txt-md">약 50초</span>
+                    </li>
+                  </ul>
+                  <div class="attraction-map">
+                    <p class="tit-sm">위치정보</p>
+                    <div class="map-wrap"></div>
+                    <div class="btn-pm-wrap">
+                      <button class="plus">
+                        <ion-icon name="add-outline"></ion-icon>
+                      </button>
+                      <button class="minus">
+                        <ion-icon name="remove-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                  <button class="btn-close circle">
+                    <ion-icon name="close-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <img src="../common/img/sub-attraction-03.jpg" alt="">
+                <span class="tit-sm">라바트위스터</span>
+                <span class="btn-circle-more">
+                  <span class="hidden">자세히 보기</span>
+                  <ion-icon name="add-outline"></ion-icon>
+                </span>
+              </a>
+              <div class="modal-wrap">
+                <div class="swiper-container mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../common/img/sub_att_05.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../common/img/sub_att_06.jpg" alt=""></div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <div class="att-info-wrap">
+                  <p class="tit-md">라바트위스터</p>
+                  <p class="txt">하늘을 나는 라바를 타고 우리 둘이~ 시원한 바람을 가르며 계절의 변화를 느껴보세요.
+                    가슴이 뻥~ 뚫리는 시원함까지 느낄 수 있지요
+                  </p>
+                  <ul class="attraction-info">
+                    <li>
+                      <ion-icon name="people-outline"></ion-icon>
+                      <span class="tit-sm">탑승인원</span>
+                      <span class="txt-md">40인</span>
+                    </li>
+                    <li>
+                      <ion-icon name="body-outline"></ion-icon>
+                      <span class="tit-sm">이용정보</span>
+                      <span class="txt-md">110cm 이상</span>
+                    </li>
+                    <li>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <span class="tit-sm">운행시간</span>
+                      <span class="txt-md">약 2분 30초</span>
+                    </li>
+                  </ul>
+                  <div class="attraction-map">
+                    <p class="tit-sm">위치정보</p>
+                    <div class="map-wrap"></div>
+                    <div class="btn-pm-wrap">
+                      <button class="plus">
+                        <ion-icon name="add-outline"></ion-icon>
+                      </button>
+                      <button class="minus">
+                        <ion-icon name="remove-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                  <button class="btn-close circle">
+                    <ion-icon name="close-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <img src="../common/img/sub-attraction-06.jpg" alt="">
+                <span class="tit-sm">카트라이더범퍼</span>
+                <span class="btn-circle-more">
+                  <span class="hidden">자세히 보기</span>
+                  <ion-icon name="add-outline"></ion-icon>
+                </span>
+              </a>
+              <div class="modal-wrap">
+                <div class="swiper-container mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../common/img/sub_att_07.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../common/img/sub_att_08.jpg" alt=""></div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <div class="att-info-wrap">
+                  <p class="tit-md">카트라이더범퍼</p>
+                  <p class="txt">좌충우돌! 짜릿짜릿~!
+                    운전면허증이 없다구요? 그래도 걱정하실 필요가 없습니다. 인기 온라인게임 속 카트라이더를 직접 운전해 보세요!
+                    친구에게 쾅! 벽에 쿵! 나는야 최고의 드라이버~ <br>
+                    * 실제처럼 조심조심 운행하면 정말 재미없겠죠? 살짝 피했다가 바로 쿵! 그래 바로 이 맛이야!
+                  </p>
+                  <ul class="attraction-info">
+                    <li>
+                      <ion-icon name="people-outline"></ion-icon>
+                      <span class="tit-sm">탑승인원</span>
+                      <span class="txt-md">25대 × 2인 = 50인</span>
+                    </li>
+                    <li>
+                      <ion-icon name="body-outline"></ion-icon>
+                      <span class="tit-sm">이용정보</span>
+                      <span class="txt-md">130cm 이상</span>
+                    </li>
+                    <li>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <span class="tit-sm">운행시간</span>
+                      <span class="txt-md">약 3분</span>
+                    </li>
+                  </ul>
+                  <div class="attraction-map">
+                    <p class="tit-sm">위치정보</p>
+                    <div class="map-wrap"></div>
+                    <div class="btn-pm-wrap">
+                      <button class="plus">
+                        <ion-icon name="add-outline"></ion-icon>
+                      </button>
+                      <button class="minus">
+                        <ion-icon name="remove-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                  <button class="btn-close circle">
+                    <ion-icon name="close-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <img src="../common/img/sub-attraction-04.jpg" alt="">
+                <span class="tit-sm">구름빵</span>
+                <span class="btn-circle-more">
+                  <span class="hidden">자세히 보기</span>
+                  <ion-icon name="add-outline"></ion-icon>
+                </span>
+              </a>
+              <div class="modal-wrap">
+                <div class="swiper-container mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../common/img/sub_att_09.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../common/img/sub_att_10.jpg" alt=""></div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <div class="att-info-wrap">
+                  <p class="tit-md">구름빵</p>
+                  <p class="txt">"구름빵" 고양이 "홍비" "홍시" 를 타고 하늘을 두둥실 떠올라보아요~
+                  </p>
+                  <ul class="attraction-info">
+                    <li>
+                      <ion-icon name="people-outline"></ion-icon>
+                      <span class="tit-sm">탑승인원</span>
+                      <span class="txt-md">6대 × 2인 = 12인</span>
+                    </li>
+                    <li>
+                      <ion-icon name="body-outline"></ion-icon>
+                      <span class="tit-sm">이용정보</span>
+                      <span class="txt-md">90cm 이상 120cm 이하</span>
+                    </li>
+                    <li>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <span class="tit-sm">운행시간</span>
+                      <span class="txt-md">약 2분 30초</span>
+                    </li>
+                  </ul>
+                  <div class="attraction-map">
+                    <p class="tit-sm">위치정보</p>
+                    <div class="map-wrap"></div>
+                    <div class="btn-pm-wrap">
+                      <button class="plus">
+                        <ion-icon name="add-outline"></ion-icon>
+                      </button>
+                      <button class="minus">
+                        <ion-icon name="remove-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                  <button class="btn-close circle">
+                    <ion-icon name="close-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <img src="../common/img/sub-attraction-05.jpg" alt="">
+                <span class="tit-sm">월드컵</span>
+                <span class="btn-circle-more">
+                  <span class="hidden">자세히 보기</span>
+                  <ion-icon name="add-outline"></ion-icon>
+                </span>
+              </a>
+              <div class="modal-wrap">
+                <div class="swiper-container mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../common/img/sub_att_11.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../common/img/sub_att_12.jpg" alt=""></div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <div class="att-info-wrap">
+                  <p class="tit-md">월드컵</p>
+                  <p class="txt">바람을 가르며 태극전사처럼 위풍당당하게! 10개의 축구공 모양의 접시가 하늘로 치솟아 빙글빙글 돌면서 연인과 친구들에게 아찔한 시간을 제공합니다! <br>
+                    * 정점에 올랐을 때 바로 옆으로 지나가는 블랙홀 2000의 바람을 느껴보세요. <br>
+                    * 1분동안 14회전. 두 눈을 꼭 감고 세어 보세요.
+                  </p>
+                  <ul class="attraction-info">
+                    <li>
+                      <ion-icon name="people-outline"></ion-icon>
+                      <span class="tit-sm">탑승인원</span>
+                      <span class="txt-md">10대 × 4인 = 40인</span>
+                    </li>
+                    <li>
+                      <ion-icon name="body-outline"></ion-icon>
+                      <span class="tit-sm">이용정보</span>
+                      <span class="txt-md">130cm 이상</span>
+                    </li>
+                    <li>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <span class="tit-sm">운행시간</span>
+                      <span class="txt-md">약 2분 30초</span>
+                    </li>
+                  </ul>
+                  <div class="attraction-map">
+                    <p class="tit-sm">위치정보</p>
+                    <div class="map-wrap"></div>
+                    <div class="btn-pm-wrap">
+                      <button class="plus">
+                        <ion-icon name="add-outline"></ion-icon>
+                      </button>
+                      <button class="minus">
+                        <ion-icon name="remove-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                  <button class="btn-close circle">
+                    <ion-icon name="close-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <img src="../common/img/sub-attraction-07.jpg" alt="">
+                <span class="tit-sm">피터팬</span>
+                <span class="btn-circle-more">
+                  <span class="hidden">자세히 보기</span>
+                  <ion-icon name="add-outline"></ion-icon>
+                </span>
+              </a>
+              <div class="modal-wrap">
+                <div class="swiper-container mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../common/img/sub_att_13.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../common/img/sub_att_14.jpg" alt=""></div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <div class="att-info-wrap">
+                  <p class="tit-md">피터팬</p>
+                  <ul class="attraction-info">
+                    <li>
+                      <ion-icon name="people-outline"></ion-icon>
+                      <span class="tit-sm">탑승인원</span>
+                      <span class="txt-md">16대 × 2인 = 32인</span>
+                    </li>
+                    <li>
+                      <ion-icon name="body-outline"></ion-icon>
+                      <span class="tit-sm">이용정보</span>
+                      <span class="txt-md">110cm 이상</span>
+                    </li>
+                    <li>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <span class="tit-sm">운행시간</span>
+                      <span class="txt-md">약 2분 30초</span>
+                    </li>
+                  </ul>
+                  <div class="attraction-map">
+                    <p class="tit-sm">위치정보</p>
+                    <div class="map-wrap"></div>
+                    <div class="btn-pm-wrap">
+                      <button class="plus">
+                        <ion-icon name="add-outline"></ion-icon>
+                      </button>
+                      <button class="minus">
+                        <ion-icon name="remove-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                  <button class="btn-close circle">
+                    <ion-icon name="close-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="tab-cont">
+          <h3 class="tit">미래의나라</h3>
+          <ul class="attraction-list flex col3">
+            <li>
+              <a href="javascript:void(0)">
+                <img src="../common/img/sub-attraction-08.jpg" alt="">
+                <span class="tit-sm">블랙홀2000</span>
+                <span class="btn-circle-more">
+                  <span class="hidden">자세히 보기</span>
+                  <ion-icon name="add-outline"></ion-icon>
+                </span>
+              </a>
+              <div class="modal-wrap">
+                <div class="swiper-container mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../common/img/sub_att_15.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../common/img/sub_att_16.jpg" alt=""></div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <div class="att-info-wrap">
+                  <p class="tit-md">블랙홀2000</p>
+                  <p class="txt">
+                    트위스트 2번! 곤두박질 7번! 초특급 우주열차!
+                    은하계의 블랙홀을 “2번 트위스트, 7번 곤두박질”치며 통과하는 초특급 우주열차!
+                    웅장한 위용을 떨치고 있는 ‘블랙홀 2000’은 일명 ‘Camel Back(낙타등)’의 닉네임을 지니고 있는 롤러코스터로 그 스릴과 짜릿함은 탑승하지 않고는 알 수 없습니다. 시속
+                    85km의 공포 특급! 자, 도전해 볼까요?
+                  </p>
+                  <ul class="attraction-info">
+                    <li>
+                      <ion-icon name="people-outline"></ion-icon>
+                      <span class="tit-sm">탑승인원</span>
+                      <span class="txt-md">24인</span>
+                    </li>
+                    <li>
+                      <ion-icon name="body-outline"></ion-icon>
+                      <span class="tit-sm">이용정보</span>
+                      <span class="txt-md">120cm 이상</span>
+                    </li>
+                    <li>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <span class="tit-sm">운행시간</span>
+                      <span class="txt-md">약 3분</span>
+                    </li>
+                  </ul>
+                  <div class="attraction-map">
+                    <p class="tit-sm">위치정보</p>
+                    <div class="map-wrap"></div>
+                    <div class="btn-pm-wrap">
+                      <button class="plus">
+                        <ion-icon name="add-outline"></ion-icon>
+                      </button>
+                      <button class="minus">
+                        <ion-icon name="remove-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                  <button class="btn-close circle">
+                    <ion-icon name="close-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <img src="../common/img/sub-attraction-09.jpg" alt="">
+                <span class="tit-sm">샷드롭</span>
+                <span class="btn-circle-more">
+                  <span class="hidden">자세히 보기</span>
+                  <ion-icon name="add-outline"></ion-icon>
+                </span>
+              </a>
+              <div class="modal-wrap">
+                <div class="swiper-container mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../common/img/sub_att_17.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../common/img/sub_att_18.jpg" alt=""></div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <div class="att-info-wrap">
+                  <p class="tit-md">샷드롭</p>
+                  <p class="txt">
+                    하늘과 땅을 헤짚는 재미가 있다! 천당과 지옥을 넘나드는 초강력 타임머신! WOW! 이런 짜릿한 느낌 처음이야!
+                    지상 52m 공중으로 로켓처럼 쏘아 올려(Shot) 공처럼 빠르게 상하로 튀겼다가(Bounce) 다시 끌어올려, 순식간에 떨어뜨리는(Drop) 아찔한 놀이기구로 지금까지 어디에서도
+                    느껴보지 못했던 짜릿한 흥분과 감동을 느낄 수 있습니다.
+                  </p>
+                  <ul class="attraction-info">
+                    <li>
+                      <ion-icon name="people-outline"></ion-icon>
+                      <span class="tit-sm">탑승인원</span>
+                      <span class="txt-md">24인</span>
+                    </li>
+                    <li>
+                      <ion-icon name="body-outline"></ion-icon>
+                      <span class="tit-sm">이용정보</span>
+                      <span class="txt-md">140cm 이상</span>
+                    </li>
+                    <li>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <span class="tit-sm">운행시간</span>
+                      <span class="txt-md">약 2분</span>
+                    </li>
+                  </ul>
+                  <div class="attraction-map">
+                    <p class="tit-sm">위치정보</p>
+                    <div class="map-wrap"></div>
+                    <div class="btn-pm-wrap">
+                      <button class="plus">
+                        <ion-icon name="add-outline"></ion-icon>
+                      </button>
+                      <button class="minus">
+                        <ion-icon name="remove-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                  <button class="btn-close circle">
+                    <ion-icon name="close-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <img src="../common/img/sub-attraction-10.jpg" alt="">
+                <span class="tit-sm">은하열차888</span>
+                <span class="btn-circle-more">
+                  <span class="hidden">자세히 보기</span>
+                  <ion-icon name="add-outline"></ion-icon>
+                </span>
+              </a>
+              <div class="modal-wrap">
+                <div class="swiper-container mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../common/img/sub_att_19.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../common/img/sub_att_20.jpg" alt=""></div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <div class="att-info-wrap">
+                  <p class="tit-md">은하열차888</p>
+                  <p class="txt">
+                    롤러코스터면 이 정도는 되어야지!
+                    수직하강과 원형레일을 반복! 두 바퀴 연속 회전은 스릴 짱! 거기다 커다란 굴을 두 번이나 통과! 머리가 닿을 듯 말 듯 아슬아슬하게 통과하는 스릴까지 만점인 서울랜드 또 하나의
+                    대표적인 롤러코스터!
+                    24인승의 궤도열차가 시속85km의 속도로 수직 환상궤도를 연속 2회 통과하는 시설물로 긴장감과 스릴을 만끽할 수 있습니다.
+                  </p>
+                  <ul class="attraction-info">
+                    <li>
+                      <ion-icon name="people-outline"></ion-icon>
+                      <span class="tit-sm">탑승인원</span>
+                      <span class="txt-md">24인</span>
+                    </li>
+                    <li>
+                      <ion-icon name="body-outline"></ion-icon>
+                      <span class="tit-sm">이용정보</span>
+                      <span class="txt-md">120cm 이상</span>
+                    </li>
+                    <li>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <span class="tit-sm">운행시간</span>
+                      <span class="txt-md">약 3분</span>
+                    </li>
+                  </ul>
+                  <div class="attraction-map">
+                    <p class="tit-sm">위치정보</p>
+                    <div class="map-wrap"></div>
+                    <div class="btn-pm-wrap">
+                      <button class="plus">
+                        <ion-icon name="add-outline"></ion-icon>
+                      </button>
+                      <button class="minus">
+                        <ion-icon name="remove-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                  <button class="btn-close circle">
+                    <ion-icon name="close-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <img src="../common/img/sub-attraction-11.jpg" alt="">
+                <span class="tit-sm">달나라열차</span>
+                <span class="btn-circle-more">
+                  <span class="hidden">자세히 보기</span>
+                  <ion-icon name="add-outline"></ion-icon>
+                </span>
+              </a>
+              <div class="modal-wrap">
+                <div class="swiper-container mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../common/img/sub_att_21.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../common/img/sub_att_22.jpg" alt=""></div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <div class="att-info-wrap">
+                  <p class="tit-md">달나라열차</p>
+                  <p class="txt">
+                    내려갔다~ 올라갔다, 가족끼리 즐겨요!
+                    귀여운 동물 모양의 4인승 궤도차가 주행 궤도를 따라 급강하, 급선회하며 쾌적한 속도감과 시원함을 느낄 수 있게 하는 가족용 탑승시설입니다.
+                    롤러코스터의 짜릿함과 시원함을 느끼고 싶지만 약한 심장이 걱정되는 분들에게 추천합니다. 누구에게나 즐거운 달나라 열차로 달나라 여행을 신나게 떠나 보세요.
+                  </p>
+                  <ul class="attraction-info">
+                    <li>
+                      <ion-icon name="people-outline"></ion-icon>
+                      <span class="tit-sm">탑승인원</span>
+                      <span class="txt-md">1대당 4인</span>
+                    </li>
+                    <li>
+                      <ion-icon name="body-outline"></ion-icon>
+                      <span class="tit-sm">이용정보</span>
+                      <span class="txt-md">120cm 이상</span>
+                    </li>
+                    <li>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <span class="tit-sm">운행시간</span>
+                      <span class="txt-md">약 3분 40초</span>
+                    </li>
+                  </ul>
+                  <div class="attraction-map">
+                    <p class="tit-sm">위치정보</p>
+                    <div class="map-wrap"></div>
+                    <div class="btn-pm-wrap">
+                      <button class="plus">
+                        <ion-icon name="add-outline"></ion-icon>
+                      </button>
+                      <button class="minus">
+                        <ion-icon name="remove-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                  <button class="btn-close circle">
+                    <ion-icon name="close-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <img src="../common/img/sub-attraction-12.jpg" alt="">
+                <span class="tit-sm">록카페</span>
+                <span class="btn-circle-more">
+                  <span class="hidden">자세히 보기</span>
+                  <ion-icon name="add-outline"></ion-icon>
+                </span>
+              </a>
+              <div class="modal-wrap">
+                <div class="swiper-container mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../common/img/sub_att_23.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../common/img/sub_att_24.jpg" alt=""></div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <div class="att-info-wrap">
+                  <p class="tit-md">록카페</p>
+                  <p class="txt">
+                    사랑하는 연인들이여, 모두 모여라!
+                    서울랜드에서 데이트를 즐기는 연인을 위한 놀이기구가 바로 록카페랍니다.
+                    커다란 원형 카페에 나란히 앉아 계시면 의자 전체에 지붕을 씌워주는 키스타임이 주어집니다.
+                    원심력으로 둘의 사이가 더 가까워지는 것은 당연한 이치! 바로 이 때가 기회랍니다.
+                  </p>
+                  <ul class="attraction-info">
+                    <li>
+                      <ion-icon name="people-outline"></ion-icon>
+                      <span class="tit-sm">탑승인원</span>
+                      <span class="txt-md">20대 × 2인 = 40인</span>
+                    </li>
+                    <li>
+                      <ion-icon name="body-outline"></ion-icon>
+                      <span class="tit-sm">이용정보</span>
+                      <span class="txt-md">110cm 이상</span>
+                    </li>
+                    <li>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <span class="tit-sm">운행시간</span>
+                      <span class="txt-md">약 2분 30초</span>
+                    </li>
+                  </ul>
+                  <div class="attraction-map">
+                    <p class="tit-sm">위치정보</p>
+                    <div class="map-wrap"></div>
+                    <div class="btn-pm-wrap">
+                      <button class="plus">
+                        <ion-icon name="add-outline"></ion-icon>
+                      </button>
+                      <button class="minus">
+                        <ion-icon name="remove-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                  <button class="btn-close circle">
+                    <ion-icon name="close-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <img src="../common/img/sub-attraction-13.jpg" alt="">
+                <span class="tit-sm">스카이엑스</span>
+                <span class="btn-circle-more">
+                  <span class="hidden">자세히 보기</span>
+                  <ion-icon name="add-outline"></ion-icon>
+                </span>
+              </a>
+              <div class="modal-wrap">
+                <div class="swiper-container mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../common/img/sub_att_25.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../common/img/sub_att_26.jpg" alt=""></div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <div class="att-info-wrap">
+                  <p class="tit-md">스카이엑스</p>
+                  <p class="txt">
+                    하늘을 날고 싶다! 스카이다이빙을 능가하는 초강력 제트엔진!
+                    스카이X는 스포츠적인 요소와 재미를 겸비한 놀이시설로 번지점프의 스릴과 스카이다이빙의 짜릿한 흥미를 동시에 경험할 수 있습니다.
+                    50m 상공에 다다른 후 마음을 가다듬고 하강 손잡이를 당기면 급하강!
+                    스카이X를 이용하시는 분은 비행궤도의 최고 저점 부근의 시속 60km에서 최대 85km로 신속하게 던져지는 듯한 느낌과 함께 흥미진진한 지표면의 돌진 현상과 함께 저항할 수 없는
+                    바람의 위력까지 함께 느끼게 됩니다.
+                  </p>
+                  <ul class="attraction-info">
+                    <li>
+                      <ion-icon name="people-outline"></ion-icon>
+                      <span class="tit-sm">탑승인원</span>
+                      <span class="txt-md">최대 3인</span>
+                    </li>
+                    <li>
+                      <ion-icon name="body-outline"></ion-icon>
+                      <span class="tit-sm">이용정보</span>
+                      <span class="txt-md">120cm 이상</span>
+                    </li>
+                    <li>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <span class="tit-sm">운행시간</span>
+                      <span class="txt-md">약 4분 30초</span>
+                    </li>
+                  </ul>
+                  <div class="attraction-map">
+                    <p class="tit-sm">위치정보</p>
+                    <div class="map-wrap"></div>
+                    <div class="btn-pm-wrap">
+                      <button class="plus">
+                        <ion-icon name="add-outline"></ion-icon>
+                      </button>
+                      <button class="minus">
+                        <ion-icon name="remove-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                  <button class="btn-close circle">
+                    <ion-icon name="close-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="tab-cont">
+          <h3 class="tit">모험의나라</h3>
+          <ul class="attraction-list flex col3">
+            <li>
+              <a href="javascript:void(0)">
+                <img src="../common/img/sub-attraction-15.jpg" alt="">
+                <span class="tit-sm">킹바이킹</span>
+                <span class="btn-circle-more">
+                  <span class="hidden">자세히 보기</span>
+                  <ion-icon name="add-outline"></ion-icon>
+                </span>
+              </a>
+              <div class="modal-wrap">
+                <div class="swiper-container mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../common/img/sub_att_27.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../common/img/sub_att_28.jpg" alt=""></div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <div class="att-info-wrap">
+                  <p class="tit-md">킹바이킹</p>
+                  <p class="txt">
+                    가족, 친구들과 함께 삼삼오오 짝을 이루어 배의 양쪽으로 나누어 타고 소리쳐 보세요. 스릴과 모험에 대해서는 더 이상 말이 필요 없는 국민적인 놀이기구!
+                    배가 뒤집힐 듯 말 듯하게 앞, 뒤로 급상승, 급하강을 반복하는 아슬아슬하고 짜릿짜릿한 쾌감을 느껴 보세요.
+                  </p>
+                  <ul class="attraction-info">
+                    <li>
+                      <ion-icon name="people-outline"></ion-icon>
+                      <span class="tit-sm">탑승인원</span>
+                      <span class="txt-md">7인석 × 12라인 = 84인</span>
+                    </li>
+                    <li>
+                      <ion-icon name="body-outline"></ion-icon>
+                      <span class="tit-sm">이용정보</span>
+                      <span class="txt-md">110cm 이상</span>
+                    </li>
+                    <li>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <span class="tit-sm">운행시간</span>
+                      <span class="txt-md">약 3분 20초</span>
+                    </li>
+                  </ul>
+                  <div class="attraction-map">
+                    <p class="tit-sm">위치정보</p>
+                    <div class="map-wrap"></div>
+                    <div class="btn-pm-wrap">
+                      <button class="plus">
+                        <ion-icon name="add-outline"></ion-icon>
+                      </button>
+                      <button class="minus">
+                        <ion-icon name="remove-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                  <button class="btn-close circle">
+                    <ion-icon name="close-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <img src="../common/img/sub-attraction-16.jpg" alt="">
+                <span class="tit-sm">해적소굴</span>
+                <span class="btn-circle-more">
+                  <span class="hidden">자세히 보기</span>
+                  <ion-icon name="add-outline"></ion-icon>
+                </span>
+              </a>
+              <div class="modal-wrap">
+                <div class="swiper-container mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../common/img/sub_att_29.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../common/img/sub_att_30.jpg" alt=""></div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <div class="att-info-wrap">
+                  <p class="tit-md">해적소굴</p>
+                  <p class="txt">
+                    펑펑 터지는 대포, 새로워진 조명과 짜릿한 바람!!
+                    온몸을 자극하는 특수효과로 더욱 박진감 넘치는 해적소굴 리얼 어드벤쳐
+                    차량에 부착된 총으로 곳곳에 숨어있는 과녁을 맞히면서 스릴 넘치는 해적소굴 모험을 만끽하세요!
+                  </p>
+                  <ul class="attraction-info">
+                    <li>
+                      <ion-icon name="people-outline"></ion-icon>
+                      <span class="tit-sm">탑승인원</span>
+                      <span class="txt-md">6대 x 2인 = 12인</span>
+                    </li>
+                    <li>
+                      <ion-icon name="body-outline"></ion-icon>
+                      <span class="tit-sm">이용정보</span>
+                      <span class="txt-md">120cm 이상</span>
+                    </li>
+                    <li>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <span class="tit-sm">운행시간</span>
+                      <span class="txt-md">약 2분 30초</span>
+                    </li>
+                  </ul>
+                  <div class="attraction-map">
+                    <p class="tit-sm">위치정보</p>
+                    <div class="map-wrap"></div>
+                    <div class="btn-pm-wrap">
+                      <button class="plus">
+                        <ion-icon name="add-outline"></ion-icon>
+                      </button>
+                      <button class="minus">
+                        <ion-icon name="remove-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                  <button class="btn-close circle">
+                    <ion-icon name="close-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <img src="../common/img/sub-attraction-17.jpg" alt="">
+                <span class="tit-sm">급류타기</span>
+                <span class="btn-circle-more">
+                  <span class="hidden">자세히 보기</span>
+                  <ion-icon name="add-outline"></ion-icon>
+                </span>
+              </a>
+              <div class="modal-wrap">
+                <div class="swiper-container mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../common/img/sub_att_31.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../common/img/sub_att_32.jpg" alt=""></div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <div class="att-info-wrap">
+                  <p class="tit-md">급류타기</p>
+                  <p class="txt">
+                    통나무 배에 몸을 싣고 물따라 길따라 여행을 떠나 보자고요~ 급류가 흐르는 수로를 따라 통나무 배를 타고 급하강, 급회전하면서 모험과 스릴을 만끽할 수 있는 시설입니다. <br>
+                    * 무거운 사람이 앞에 타면 떨어질 때 보트에 물난리가 난대요~! <br>
+                    * 물론 겨울에는 운행하지 않는 거 아시죠? 물이 꽁꽁!
+                  </p>
+                  <ul class="attraction-info">
+                    <li>
+                      <ion-icon name="people-outline"></ion-icon>
+                      <span class="tit-sm">탑승인원</span>
+                      <span class="txt-md">1대당 4인</span>
+                    </li>
+                    <li>
+                      <ion-icon name="body-outline"></ion-icon>
+                      <span class="tit-sm">이용정보</span>
+                      <span class="txt-md">110cm 이상</span>
+                    </li>
+                    <li>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <span class="tit-sm">운행시간</span>
+                      <span class="txt-md">약 3분 50초</span>
+                    </li>
+                  </ul>
+                  <div class="attraction-map">
+                    <p class="tit-sm">위치정보</p>
+                    <div class="map-wrap"></div>
+                    <div class="btn-pm-wrap">
+                      <button class="plus">
+                        <ion-icon name="add-outline"></ion-icon>
+                      </button>
+                      <button class="minus">
+                        <ion-icon name="remove-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                  <button class="btn-close circle">
+                    <ion-icon name="close-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <img src="../common/img/sub-attraction-18.jpg" alt="">
+                <span class="tit-sm">니나노고카트</span>
+                <span class="btn-circle-more">
+                  <span class="hidden">자세히 보기</span>
+                  <ion-icon name="add-outline"></ion-icon>
+                </span>
+              </a>
+              <div class="modal-wrap">
+                <div class="swiper-container mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../common/img/sub_att_33.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../common/img/sub_att_34.jpg" alt=""></div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <div class="att-info-wrap">
+                  <p class="tit-md">니나노고카트</p>
+                  <p class="txt">
+                    서울랜드에 바람을 가르는 엄청난 카트가 등장했다! 신나는 니나노고카트를 타고 짜릿한 스릴을 느껴보세요!
+                  </p>
+                  <ul class="attraction-info">
+                    <li>
+                      <ion-icon name="people-outline"></ion-icon>
+                      <span class="tit-sm">탑승인원</span>
+                      <span class="txt-md">최대 2인</span>
+                    </li>
+                    <li>
+                      <ion-icon name="body-outline"></ion-icon>
+                      <span class="tit-sm">이용정보</span>
+                      <span class="txt-md">130cm 이상</span>
+                    </li>
+                    <li>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <span class="tit-sm">운행시간</span>
+                      <span class="txt-md">약 4분 30초</span>
+                    </li>
+                  </ul>
+                  <div class="attraction-map">
+                    <p class="tit-sm">위치정보</p>
+                    <div class="map-wrap"></div>
+                    <div class="btn-pm-wrap">
+                      <button class="plus">
+                        <ion-icon name="add-outline"></ion-icon>
+                      </button>
+                      <button class="minus">
+                        <ion-icon name="remove-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                  <button class="btn-close circle">
+                    <ion-icon name="close-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <img src="../common/img/sub-attraction-19.jpg" alt="">
+                <span class="tit-sm">사격장</span>
+                <span class="btn-circle-more">
+                  <span class="hidden">자세히 보기</span>
+                  <ion-icon name="add-outline"></ion-icon>
+                </span>
+              </a>
+              <div class="modal-wrap">
+                <div class="swiper-container mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../common/img/sub_att_35.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../common/img/sub_att_36.jpg" alt=""></div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <div class="att-info-wrap">
+                  <p class="tit-md">사격장</p>
+                  <p class="txt">
+                    "내가 왕년에 군대에서 말이지~!"
+                    매일매일 자랑하던 남자친구의 사격 솜씨를 시험할 수 있는 곳,
+                    활보다는 총에 자신 있는 분을 위한 곳 이예요. 멋지게 사격 솜씨를 뽐내 보세요.
+                    한쪽 눈을 꼬~옥 감고 목표물을 잘 조준해 보세요. 목표물을 맞췄을 때의 그 쾌감, 경품까지 덤으로! <br>
+                    * 파크이용권 및 연간이용권에 포함되지 않은 유료 시설입니다.
+                  </p>
+                  <div class="attraction-map">
+                    <p class="tit-sm">위치정보</p>
+                    <div class="map-wrap"></div>
+                    <div class="btn-pm-wrap">
+                      <button class="plus">
+                        <ion-icon name="add-outline"></ion-icon>
+                      </button>
+                      <button class="minus">
+                        <ion-icon name="remove-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                  <button class="btn-close circle">
+                    <ion-icon name="close-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <img src="../common/img/sub-attraction-20.jpg" alt="">
+                <span class="tit-sm">리모컨보트</span>
+                <span class="btn-circle-more">
+                  <span class="hidden">자세히 보기</span>
+                  <ion-icon name="add-outline"></ion-icon>
+                </span>
+              </a>
+              <div class="modal-wrap">
+                <div class="swiper-container mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../common/img/sub_att_37.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../common/img/sub_att_38.jpg" alt=""></div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <div class="att-info-wrap">
+                  <p class="tit-md">리모컨보트</p>
+                  <p class="txt">
+                    이리저리 리모컨을 가지고 장애물도 넘으며 배를 직접 움직여 보세요. <br>
+                    * 파크이용권 및 연간이용권에 포함되지 않은 유료 시설입니다. <br>
+                    * 동절기에는 운영하지 않습니다.
+                  </p>
+                  <div class="attraction-map">
+                    <p class="tit-sm">위치정보</p>
+                    <div class="map-wrap"></div>
+                    <div class="btn-pm-wrap">
+                      <button class="plus">
+                        <ion-icon name="add-outline"></ion-icon>
+                      </button>
+                      <button class="minus">
+                        <ion-icon name="remove-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                  <button class="btn-close circle">
+                    <ion-icon name="close-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+      </div>
+    </div>
+  </article>
+
+  <div class="modal-box"></div>
+  </div>
+
+  <? include "../common/sub_foot.html" ?>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+
+</html>

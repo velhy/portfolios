@@ -1,0 +1,80 @@
+.main {
+    position:relative; margin-top:49px; z-index: 99;
+}
+
+.main img {
+    width:100%; border-radius: 0 0 20px 20px
+}
+
+.tabs {
+    overflow: hidden; background:#eee
+  }
+
+  .tabs a {
+    display:block; float:left;padding:10px 0; width: 50%; text-align: center; font-size: 13px
+  }
+
+  .tabs a.active {
+    background:#fe4365; color:#fff
+  }
+
+#content {
+    background:#eee; margin-bottom:40px
+}
+
+/* #content {
+    margin:20px 16px 50px 16px
+} */
+
+.main p {
+    position: absolute; width:90%; top:60%; left:50%; margin-left:-45%; color:#fff; text-align: center; 
+}
+
+.main h3 {
+    position: absolute; z-index:999; width:140px; top:50%; left:50%; margin-left:-70px; font-size:18px; font-weight: 700; color:#fff; text-shadow: 2px 2px 5px #999; text-align: center;
+}
+
+#content h2 {
+    padding: 30px 0; background:#fff; text-align: center; font-size: 20px; font-weight: 800;
+}
+
+#content h3 {
+   padding:30px 0; background:#fff; text-align: center; font-size: 17px; font-weight: 700;
+}
+
+#content p {
+    margin:20px 0
+}
+
+#content .card_list {
+    width:90%; margin:0 auto
+}
+
+#content .card_list li {
+   position: relative;  margin: 90px 0; background:#fff; border:1px solid #ddd
+}
+
+#content .card_list:nth-of-type(2) li:last-of-type {
+    margin-bottom:0
+}
+
+#content .card_list li img {
+    position: absolute; left:50%; top: -54px; margin-left:-25px; width:50px; box-shadow: 0 15px 20px rgba(0,0,0,0.2);
+}
+
+#content .card_list dl {
+    margin-top:34px; padding:10px 16px 20px 16px
+}
+
+#content .card_list dt {
+    font-weight: 700; text-align: center; font-size:17px
+}
+
+#content .card_list dd strong {
+    display: block; margin:16px 0 6px; padding:3px 6px; width:50px; border-radius: 20px; background:#fe4365; color:#fff; font-size:13px
+}
+
+#content .card_list dd {
+   font-size:13px; line-height: 1.6em;
+}
+

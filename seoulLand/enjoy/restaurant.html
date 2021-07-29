@@ -1,0 +1,246 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>레스토랑 | 서울랜드</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../common/css/style.css">
+    <!--[if IE9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <? include "../common/sub_head.html" ?>
+    <? include "../common/sub-enjoy.html" ?>
+
+    <article id="sub-cont-wrap">
+        <h2 class="page-title">레스토랑</h2>
+        <div class="page-cont">
+            <div class="tab-wrap">
+                <ul class="tab-list">
+                    <li><a href="javascript:void(0)" class="tab tab1 active">캐릭터타운</a></li>
+                    <li><a href="javascript:void(0)" class="tab tab2">미래의나라</a></li>
+                    <li><a href="javascript:void(0)" class="tab tab3">모험의나라</a></li>
+                </ul>
+            </div>
+            <div class="inner">
+                <section class="tab-cont">
+                    <h3 class="tit">캐릭터타운</h3>
+                    <ul class="restaurant-list col1">
+                        <li>
+                            <img src="../common/img/sub-restaurant-01.jpg" alt="">
+                            <dl>
+                                <dt class="tit-md">CAFE쉼표</dt>
+                                <dd class="txt-md"> 서울랜드의 분위기를 즐길 수 있는 대표 카페. 맛있는 간식을 카페쉼표에서 즐겨보세요.</dd>
+                                <dd>
+                                    <ul class="menu-list">
+                                        <li>
+                                            <img src="../common/img/sub-food-menu-03.jpg" alt="">
+                                            <span class="txt-md">아이스크림</span>
+                                        </li>
+                                        <li>
+                                            <img src="../common/img/sub-food-menu-01.jpg" alt="">
+                                            <span class="txt-md">마카롱</span>
+                                        </li>
+                                        <li>
+                                            <img src="../common/img/sub-food-menu-02.jpg" alt="">
+                                            <span class="txt-md">와플</span>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <img src="../common/img/sub-restaurant-02.jpg" alt="">
+                            <dl>
+                                <dt class="tit-md">키즈팰리스</dt>
+                                <dd class="txt-md">온 가족의 입맛을 한번에 사로잡은 패밀리 레스토랑.
+                                    아이들의 입맛에 딱 맞는 다채로운 메뉴로 언제나 큰 인기를 누리고 있습니다.</dd>
+                                <dd>
+                                    <ul class="menu-list">
+                                        <li>
+                                            <img src="../common/img/sub-food-menu-04.jpg" alt="">
+                                            <span class="txt-md">떡갈비</span>
+                                        </li>
+                                        <li>
+                                            <img src="../common/img/sub-food-menu-05.jpg" alt="">
+                                            <span class="txt-md">우동</span>
+                                        </li>
+                                        <li>
+                                            <img src="../common/img/sub-food-menu-06.jpg" alt="">
+                                            <span class="txt-md">자장면</span>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <img src="../common/img/sub-restaurant-03.jpg" alt="">
+                            <dl>
+                                <dt class="tit-md">까페리앙</dt>
+                                <dd class="txt-md">이탈리안 커피와 뉴욕 핫도그를 즐길 수 있는 카페</dd>
+                                <dd>
+                                    <ul class="menu-list">
+                                        <li>
+                                            <img src="../common/img/sub-food-menu-07.jpg" alt="">
+                                            <span class="txt-md">핫도그</span>
+                                        </li>
+                                        <li>
+                                            <img src="../common/img/sub-food-menu-08.jpg" alt="">
+                                            <span class="txt-md">생과일주스</span>
+                                        </li>
+                                        <li>
+                                            <img src="../common/img/sub-food-menu-09.jpg" alt="">
+                                            <span class="txt-md">커피</span>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </section>
+                <section class="tab-cont">
+                    <h3 class="tit">미래의나라</h3>
+                    <ul class="restaurant-list col1">
+                        <li>
+                            <img src="../common/img/sub-restaurant-04.jpg" alt="">
+                            <dl>
+                                <dt class="tit-md">카레원</dt>
+                                <dd class="txt-md">카레&하이라이스 전문점입니다.
+                                    온가족이 좋아하는 카레와 하이라이스를 카레원에서 즐겨보세요.</dd>
+                                <dd>
+                                    <ul class="menu-list">
+                                        <li>
+                                            <img src="../common/img/sub-food-menu-10.jpg" alt="">
+                                            <span class="txt-md">카레</span>
+                                        </li>
+                                        <li>
+                                            <img src="../common/img/sub-food-menu-11.jpg" alt="">
+                                            <span class="txt-md">야끼소바</span>
+                                        </li>
+                                        <li>
+                                            <img src="../common/img/sub-food-menu-12.jpg" alt="">
+                                            <span class="txt-md">돈부리</span>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <img src="../common/img/sub-restaurant-05.jpg" alt="">
+                            <dl>
+                                <dt class="tit-md">롯데리아 1호점</dt>
+                                <dd class="txt-md">맛있는 롯데리아 햄버거와 치킨을 서울랜드에서도 즐길 수 있어요.</dd>
+                                <dd>
+                                    <ul class="menu-list">
+                                        <li>
+                                            <img src="../common/img/sub-food-menu-13.jpg" alt="">
+                                            <span class="txt-md">햄버거</span>
+                                        </li>
+                                        <li>
+                                            <img src="../common/img/sub-food-menu-14.jpg" alt="">
+                                            <span class="txt-md">치킨</span>
+                                        </li>
+                                        <li>
+                                            <img src="../common/img/sub-food-menu-15.jpg" alt="">
+                                            <span class="txt-md">콜라</span>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <img src="../common/img/sub-restaurant-06.jpg" alt="">
+                            <dl>
+                                <dt class="tit-md">스파게티니 팩토리</dt>
+                                <dd class="txt-md">풍부한 맛의 정통 파스타와 바삭한 화덕 피자로 손님여러분을 이탈리아로 모십니다.</dd>
+                                <dd>
+                                    <ul class="menu-list">
+                                        <li>
+                                            <img src="../common/img/sub-food-menu-16.jpg" alt="">
+                                            <span class="txt-md">스파게티</span>
+                                        </li>
+                                        <li>
+                                            <img src="../common/img/sub-food-menu-17.jpg" alt="">
+                                            <span class="txt-md">피자</span>
+                                        </li>
+                                        <li>
+                                            <img src="../common/img/sub-food-menu-18.jpg" alt="">
+                                            <span class="txt-md">리조또</span>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </section>
+                <section class="tab-cont">
+                    <h3 class="tit">모험의나라</h3>
+                    <ul class="restaurant-list col1">
+                        <li>
+                            <img src="../common/img/sub-restaurant-07.jpg" alt="">
+                            <dl>
+                                <dt class="tit-md">로데오 레스토랑</dt>
+                                <dd class="txt-md">인디언풍 인테리어의 이국적인 정취를 느낄 수 있는 레스토랑입니다.
+                                    모든 입맛에 안성맞춤입니다.</dd>
+                                <dd>
+                                    <ul class="menu-list">
+                                        <li>
+                                            <img src="../common/img/sub-food-menu-19.jpg" alt="">
+                                            <span class="txt-md">폭립</span>
+                                        </li>
+                                        <li>
+                                            <img src="../common/img/sub-food-menu-21.jpg" alt="">
+                                            <span class="txt-md">스테이크</span>
+                                        </li>
+                                        <li>
+                                            <img src="../common/img/sub-food-menu-20.jpg" alt="">
+                                            <span class="txt-md">생맥주</span>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <img src="../common/img/sub-restaurant-08.jpg" alt="">
+                            <dl>
+                                <dt class="tit-md">던킨도너츠</dt>
+                                <dd class="txt-md">서울랜드에서 만나는 다양한 도너츠와 깔끔한 커피!</dd>
+                                <dd>
+                                    <ul class="menu-list">
+                                        <li>
+                                            <img src="../common/img/sub-food-menu-22.jpg" alt="">
+                                            <span class="txt-md">도너츠</span>
+                                        </li>
+                                        <li>
+                                            <img src="../common/img/sub-food-menu-23.jpg" alt="">
+                                            <span class="txt-md">샌드위치</span>
+                                        </li>
+                                        <li>
+                                            <img src="../common/img/sub-food-menu-24.jpg" alt="">
+                                            <span class="txt-md">아이스티</span>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </article>
+    </div>
+
+    <? include "../common/sub_foot.html" ?>
+</body>
+
+</html>

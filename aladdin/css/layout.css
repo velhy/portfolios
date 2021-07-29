@@ -1,0 +1,1000 @@
+/* 와이드 pc  */
+#wrap {
+    width: 100%;
+    overflow: hidden;
+}
+
+.videoBox {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+#videoBG {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: auto;
+    min-width: 100%;
+    height: auto;
+    min-height: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -100;
+}
+
+#imgBG {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: auto;
+    min-width: 100%;
+    height: auto;
+    min-height: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -100;
+    display: none
+}
+
+.videoBox .v_logo {
+    display: block;
+    width: 450px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    margin-left: -225px;
+}
+
+.videoBox .v_logo img {
+    width: 100%
+}
+
+a.down {
+    display: block;
+    width: 180px;
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    margin-left: -90px;
+    bottom: 5%;
+    text-align: center;
+    color: #fff;
+    font-family: 'Kaushan Script'
+}
+
+.down img {
+    display: block;
+    position: relative;
+    width: 22px;
+    height: 22px;
+    margin: 3% auto 0;
+    animation: ani 1s infinite alternate;
+}
+
+@keyframes ani {
+    0% {
+        top: 3px
+    }
+
+    100% {
+        top: 0
+    }
+}
+
+
+
+
+
+
+#content {
+    width: 100%;
+}
+
+#content .trailer,
+#content .series,
+#content .gallery {
+    margin: 100px 0
+}
+
+
+
+/* 스토리 */
+#content .story {
+    padding-bottom: 100px;
+}
+
+
+#content .story h3 {
+    font-size: 2.4em;
+    font-family: 'Kaushan Script';
+    text-align: center
+}
+
+#content .story_bg {
+    background: url(../images/s4.png) 120% bottom no-repeat;
+    transition: all .5s;
+    opacity: 0
+}
+
+#content .story_bg.on {
+    background: url(../images/s4.png) center 90% no-repeat;
+    background-size: 400px;
+    opacity: 1;
+}
+
+#content .story_con {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 180px;
+    padding-bottom: 150px;
+    background: rgba(255, 255, 255, .9);
+    position: relative
+}
+
+#content .story p {
+    padding-top: 40px;
+    margin-top: 40px;
+    text-align: center;
+    color: #666;
+    font-size: 1.4em;
+    line-height: 1.8em
+}
+
+#content .story a.more {
+    display: block;
+    text-align: center;
+    width: 140px;
+    font-weight: 700;
+    position: absolute;
+    top: 200px;
+    right: 0;
+    color: #333
+}
+
+
+
+#content .tit {
+    margin-bottom: 100px;
+    width: auto;
+    height: 350px;
+    position: relative;
+}
+
+#content .tit h3 {
+    padding-top: 150px;
+    color: #fff;
+    font-size: 2.8em;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Kaushan Script';
+}
+
+/* 캐릭터 */
+#content .char1,
+#content .char2,
+#content .char3 {
+    width: 86%;
+    margin: 0 7% 80px;
+    overflow: hidden
+}
+
+#content .other_char {
+    overflow: hidden
+}
+
+#content .other_charBg {
+    background: rgba(255, 255, 255, .9);
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden
+}
+
+
+#content .character .tit {
+    background: url(../images/c_bg.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed
+}
+
+#content .character dt {
+    margin-top: 30px;
+    font-size: 1.8em;
+    font-family: 'Sansita Swashed';
+    font-weight: 700;
+    color: #333
+}
+
+#content .character dd {
+    margin-top: 100px;
+    color: #666
+}
+
+#content .character blockquote {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    font-style: italic;
+    color: #006a71
+}
+
+
+
+#content .char1 li,
+#content .char3 li {
+    float: left;
+    width: 31%
+}
+
+#content .char1 li img,
+#content .char2 li img,
+#content .char3 li img {
+    width: 100%;
+    border-radius: 40px 0
+}
+
+#content .char1 li:nth-of-type(1),
+#content .char1 li:nth-of-type(2),
+#content .char3 li:nth-of-type(1),
+#content .char3 li:nth-of-type(2) {
+    margin-right: 3.5%
+}
+
+#content .char1 li:nth-of-type(2) img:nth-of-type(1),
+#content .char3 li:nth-of-type(2) img:nth-of-type(1) {
+    margin-bottom: 30px
+}
+
+#content .char1 li:nth-of-type(3),
+#content .char3 li:nth-of-type(3) {
+    position: relative
+}
+
+
+#content .char2 li {
+    float: right;
+    width: 31%
+}
+
+#content .char2 li:nth-of-type(2),
+#content .char2 li:nth-of-type(3) {
+    margin-right: 3.5%
+}
+
+#content .char2 li:nth-of-type(2) img:nth-of-type(1) {
+    margin-bottom: 30px
+}
+
+#content .char2 dl {
+    text-align: right
+}
+
+#content .char1 a.more,
+#content .char2 a.more,
+#content .char3 a.more {
+    display: block;
+    text-align: center;
+    width: 120px;
+    margin-top: 20px;
+    padding: 10px 0;
+    background: #2f0d7e;
+    background: linear-gradient(to right, #481eae 0%, #2f0d7e 100%);
+    color: #fff;
+}
+
+#content .char2 a.more {
+    float: right
+}
+
+
+
+
+
+/* 트레일러 */
+#content .trailer {
+    background: url(../images/back2.jpg);
+    padding: 80px 0
+}
+
+
+#content .trailer .tit {
+    margin-bottom: 50px;
+    height: auto;
+}
+
+#content .trailer .tit h3 {
+    padding-top: 30px;
+    position: relative;
+}
+
+#content .trailer .tit h3::after {
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    margin-left: -15px;
+    background: rgba(255, 255, 255, .8);
+    border-radius: 40px;
+    width: 30px;
+    height: 5px
+}
+
+#content .trail_list {
+    background: url(../images/ob4.png) center center no-repeat;
+    background-size: 400px
+}
+
+
+#content .trail_list {
+    overflow: hidden;
+    width: 75%;
+    margin: 0 auto;
+}
+
+#content .trail_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+#content .trail_list li {
+    width: 20%;
+    margin-bottom: 4%;
+    position: relative;
+    overflow: hidden
+}
+
+#content .trail_list li:nth-of-type(1),
+#content .trail_list li:nth-of-type(3) {
+    margin-right: 60%
+}
+
+
+#content .trail_list li dl {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    border-radius: 50%;
+    /*    background: linear-gradient(to bottom, rgb(255,255,255,.1) 0%, rgb(25, 5, 66, .3) 100%); */
+}
+
+#content .trail_list li dt,
+#content .trail_list li dd {
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    margin-left: -40%;
+    text-align: center
+}
+
+#content .trail_list li dt {
+    bottom: 50%;
+    font-size: 1.4em;
+    transition: all .5s
+}
+
+
+#content .trail_list li dd {
+    bottom: 0;
+    transition: all .5s;
+    opacity: 0
+}
+
+#content .trail_list li dd i {
+    font-size: 3em;
+    color: rgb(230, 220, 255);
+}
+
+
+#content .trail_list li img {
+    width: 100%;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: all .5s
+}
+
+#content .trail_list li .img_box {
+    overflow: hidden
+}
+
+#content .trail_list li:hover dl {
+    background: linear-gradient(to bottom, rgb(25, 5, 66, .5) 0%, rgb(25, 5, 66, .6) 100%);
+}
+
+#content .trail_list li:hover dt {
+    bottom: 60%;
+    transition-delay: .2s
+}
+
+#content .trail_list li:hover dd {
+    opacity: 1;
+    bottom: 35%;
+    transition-delay: .2s
+}
+
+#content .trail_list li:hover img {
+    transform: scale(1.04)
+}
+
+
+
+
+
+
+/* 갤러리 */
+#content .gallery .tit {
+    background: url(../images/g_bg.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed
+}
+
+
+
+
+
+@media screen and (max-width:1600px) {
+
+    #content .char1 li:nth-of-type(3) dd,
+    #content .char2 li:nth-of-type(3) dd,
+    #content .char3 li:nth-of-type(3) dd {
+        margin-top: 50px
+    }
+
+    #content .char1 li:nth-of-type(3) dd>p,
+    #content .char2 li:nth-of-type(3) dd>p,
+    #content .char3 li:nth-of-type(3) dd>p,
+    #content .char_list li dd {
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        word-wrap: break-word;
+    }
+
+    #content .char_list li dd {
+        -webkit-line-clamp: 4
+    }
+}
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+
+    .feature .fInner {
+        margin: 0 2.5%;
+        width: auto;
+    }
+
+    #content .char1,
+    #content .char2,
+    #content .char3 {
+        width: auto;
+        margin: 0 5% 80px
+    }
+
+    #content .char1 li:nth-of-type(3) dd,
+    #content .char2 li:nth-of-type(3) dd,
+    #content .char3 li:nth-of-type(3) dd {
+        margin-top: 40px
+    }
+
+    #content .char1 li:nth-of-type(3) dd blockquote,
+    #content .char2 li:nth-of-type(3) dd blockquote,
+    #content .char3 li:nth-of-type(3) dd blockquote {
+        font-size: 1.1em
+    }
+
+    #content .char1 li:nth-of-type(3) dd>p,
+    #content .char2 li:nth-of-type(3) dd>p,
+    #content .char3 li:nth-of-type(3) dd>p,
+    #content .char_list li dd {
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        word-wrap: break-word;
+    }
+
+    #content .char_list li dd {
+        -webkit-line-clamp: 3
+    }
+
+    #content .trail_list {
+        background: none;
+        width: 85%;
+        margin: 0 auto
+    }
+
+    #content .trail_list li {
+        width: 30%;
+        margin-bottom: 3%
+    }
+
+    #content .trail_list li:nth-of-type(1),
+    #content .trail_list li:nth-of-type(3) {
+        margin-right: 0
+    }
+
+    #content .trail_list li:nth-of-type(4) {
+        display: none
+    }
+
+}
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+    .down {
+        font-size: 1em;
+    }
+
+    .down img {
+        width: 20px;
+        height: 20px;
+    }
+
+    #content .tit {
+        height: 250px;
+        position: relative
+    }
+
+    #content .tit::after {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        margin-left: -13px;
+        background: #006A71;
+        width: 26px;
+        height: 4px
+    }
+
+    #content .character .tit,
+    #content .trailer .tit,
+    #content .series .tit,
+    #content .gallery .tit {
+        background-attachment: scroll;
+    }
+
+    #content .tit h3 {
+        padding-top: 120px;
+        font-size: 2em
+    }
+
+    #content .story_con {
+        width: auto;
+        height: auto;
+        margin: 0;
+        padding-top: 180px;
+    }
+
+    #content .story_con p {
+        padding: 0 8%;
+        font-size: 1.1em
+    }
+
+    #content .story a.more {
+        top: 60px;
+        right: 30px;
+        width: 100px;
+        font-size: .8em
+    }
+
+
+    #content .char1,
+    #content .char2,
+    #content .char3 {
+        width: auto;
+        margin: 0 3% 80px 3%;
+        overflow: hidden
+    }
+
+    #content .char1 dt,
+    #content .char2 dt,
+    #content .char3 dt {
+        font-size: 1.8em
+    }
+
+    #content .character dd {
+        margin-top: 0;
+    }
+
+    #content .char1 li:nth-of-type(1),
+    #content .char1 li:nth-of-type(2),
+    #content .char3 li:nth-of-type(1),
+    #content .char3 li:nth-of-type(2) {
+        width: 48%;
+        margin-right: 4%
+    }
+
+    #content .char1 li:nth-of-type(2),
+    #content .char3 li:nth-of-type(2) {
+        margin-right: 0
+    }
+
+
+    #content .char1 li:nth-of-type(3),
+    #content .char3 li:nth-of-type(3) {
+        float: none;
+        width: auto;
+        clear: both
+    }
+
+    #content .char1 li:nth-of-type(3) dl,
+    #content .char3 li:nth-of-type(3) dl {
+        padding-top: 0
+    }
+
+    #content .char1 li:nth-of-type(3) dt,
+    #content .char3 li:nth-of-type(3) dt {
+        float: left;
+        width: 16%;
+        margin-right: 4%;
+    }
+
+    #content .char1 li:nth-of-type(3) dd,
+    #content .char3 li:nth-of-type(3) dd {
+        float: left;
+        width: 80%;
+    }
+
+    #content .char1 li:nth-of-type(3) blockquote,
+    #content .char3 li:nth-of-type(3) blockquote {
+        display: none
+    }
+
+
+    #content .char2 li:nth-of-type(1),
+    #content .char2 li:nth-of-type(2) {
+        width: 48%;
+        margin-right: 4%
+    }
+
+    #content .char2 li:nth-of-type(1) {
+        margin-right: 0
+    }
+
+    #content .char2 li:nth-of-type(3) {
+        float: none;
+        width: auto;
+        clear: both
+    }
+
+    #content .char2 li:nth-of-type(3) dl {
+        padding-top: 0
+    }
+
+    #content .char2 li:nth-of-type(3) dt {
+        float: right;
+        width: 16%;
+        margin-left: 4%;
+    }
+
+    #content .char2 li:nth-of-type(3) dd {
+        float: right;
+        width: 80%;
+    }
+
+    #content .char2 li:nth-of-type(3) blockquote {
+        display: none
+    }
+
+    #content .trailer .tit h3 {
+        color: #fff
+    }
+
+
+    #content .trail_list li dl {
+        position: relative;
+        top: 0;
+        left: 0;
+        color: #fff;
+        background: none
+    }
+
+    #content .trail_list li dt {
+        position: relative;
+        width: auto;
+        margin: 3% auto 0;
+        top: 0;
+        left: 0;
+        margin-left: 0;
+        font-size: 1.2em
+    }
+
+
+    #content .trail_list li dd {
+        display: none
+    }
+
+    #content .trail_list li:hover dl {
+        background: none
+    }
+
+
+    #content .trail_list li:hover img {
+        transform: none
+    }
+
+    #content .trail_list li:nth-of-type(5),
+    #content .trail_list li:nth-of-type(6) {
+        display: none
+    }
+
+
+
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+
+    #imgBG {
+        position: fixed;
+    }
+
+    .videoBox .v_logo {
+        width: 300px;
+        margin-left: -150px
+    }
+
+
+
+    #content .character .tit,
+    #content .trailer .tit,
+    #content .series .tit,
+    #content .gallery .tit {
+        background: none;
+    }
+
+    #content .character .tit h3,
+    #content .trailer .tit h3,
+    #content .series .tit h3,
+    #content .gallery .tit h3 {
+        color: #333
+    }
+
+
+    #content section {
+        background: rgba(255, 255, 255, .9);
+        padding-bottom: 40px
+    }
+
+    #content .character {
+        margin-bottom: 0
+    }
+
+    #content .story h3 {
+        font-size: 2em;
+        text-align: center
+    }
+
+    #content .story_con {
+        padding-top: 50px;
+    }
+
+    #content .story {
+        height: auto;
+        padding-bottom: 0
+    }
+
+    #content .trailer,
+    #content .series,
+    #content .gallery {
+        margin: 0
+    }
+
+    #content .tit {
+        height: 100px;
+        margin-bottom: 50px
+    }
+
+    #content .tit h3 {
+        padding-top: 60px
+    }
+
+    #content .char1 li:nth-of-type(1),
+    #content .char1 li:nth-of-type(2),
+    #content .char3 li:nth-of-type(1),
+    #content .char3 li:nth-of-type(2) {
+        float: none;
+        width: auto;
+        margin: 0
+    }
+
+    #content .char1 li:nth-of-type(1),
+    #content .char3 li:nth-of-type(1) {
+        margin-bottom: 2%
+    }
+
+    #content .char1 li:nth-of-type(2) img:first-of-type,
+    #content .char3 li:nth-of-type(2) img:first-of-type {
+        margin-right: 2%
+    }
+
+    #content .char1 li:nth-of-type(2) img,
+    #content .char3 li:nth-of-type(2) img {
+        float: left;
+        width: 49%
+    }
+
+
+    #content .char2 li:nth-of-type(1),
+    #content .char2 li:nth-of-type(2) {
+        float: none;
+        width: auto;
+        margin: 0
+    }
+
+    #content .char2 li:nth-of-type(1) {
+        margin-bottom: 2%
+    }
+
+    #content .char2 li:nth-of-type(2) img:first-of-type {
+        margin-right: 2%
+    }
+
+    #content .char2 li:nth-of-type(2) img {
+        float: left;
+        width: 49%
+    }
+
+    #content .char1 dt,
+    #content .char2 dt {
+        font-size: 1.5em
+    }
+
+    #content .trailer .tit h3 {
+        color: #fff
+    }
+
+
+    .feature .fInner {
+        width: auto;
+        margin: 0 2%
+    }
+
+
+    .feature .button div {
+        width: 40px;
+        height: 40px;
+    }
+
+    .feature .button div a {
+        background-size: 20px 20px;
+    }
+
+
+
+
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+
+
+    #content .char1 dt,
+    #content .char2 dt,
+    #content .char3 dt {
+        padding-top: 30px;
+    }
+
+    #content .char1 li:nth-of-type(3) dt,
+    #content .char2 li:nth-of-type(3) dt,
+    #content .char3 li:nth-of-type(3) dt {
+        float: none;
+        width: auto;
+        margin: 0;
+        text-align: center;
+        font-size: 1.6em
+    }
+
+    #content .char1 li:nth-of-type(3) dd,
+    #content .char2 li:nth-of-type(3) dd,
+    #content .char3 li:nth-of-type(3) dd {
+        float: none;
+        width: auto;
+        text-align: center;
+    }
+
+    #content .char1 a.more,
+    #content .char2 a.more,
+    #content .char3 a.more {
+        margin: 5% auto 0;
+        float: none
+    }
+
+    #content .char1 li:nth-of-type(2),
+    #content .char2 li:nth-of-type(2),
+    #content .char3 li:nth-of-type(2) {
+        display: none
+    }
+
+
+
+    #content .char1 li img,
+    #content .char2 li img,
+    #content .char3 li img,
+    #content .char_list li img {
+        display: block;
+        width: 300px;
+        margin: 0 auto
+    }
+
+
+    #content .char_list {
+        display: none
+    }
+
+    #content .char_list li {
+        position: relative;
+        top: 0;
+        left: 0
+    }
+
+    #content .char_list li:nth-of-type(1) img {
+        float: none;
+        width: 100%
+    }
+
+    #content .char_list li:nth-of-type(1) dl {
+        float: none;
+        width: 100%;
+        text-align: center
+    }
+
+    #content .list_tab li {
+        display: none
+    }
+
+    #content .trail_list li {
+        width: 46%
+    }
+
+
+    #content .trail_list li:nth-of-type(3),
+    #content .trail_list li:nth-of-type(4) {
+        display: none
+    }
+
+
+
+
+
+
+}
+
+/* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+    #wrap {
+        min-width: 320px;
+    }
+
+    .feature .fInner {
+        width: 95%;
+    }
+
+    .feature li {
+        width: 140px;
+        height: 210px;
+    }
+
+    .feature li span {
+        font-size: 1.1667em;
+    }
+
+    .feature .button {
+        display: none;
+    }
+
+}

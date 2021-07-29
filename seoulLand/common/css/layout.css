@@ -1,0 +1,266 @@
+@charset "utf-8";
+
+/*
+ * layout.css
+*/
+
+/**********************************************************************************
+** header
+***********************************************************************************/
+#header-wrapper {
+    position: fixed;
+    z-index: 200;
+    width: 100%;
+    height: 100px;
+    border-bottom: 2px solid #eee;
+    background: #fff;
+}
+
+#header-wrapper .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+#header-wrapper .logo {
+    width: 200px
+}
+
+#header-wrapper #gnb {
+    /* width: 750px */
+}
+
+#header-wrapper .user-menu {
+    width: 200px;
+}
+
+#header-wrapper .logo {
+    padding-top: 30px;
+}
+
+#header-wrapper .logo a,
+.logo-form a {
+    overflow: hidden;
+    display: block;
+    width: 160px;
+    height: 80px;
+    background: url(../img/logo.png) no-repeat;
+    background-size: 160px 52px;
+    text-indent: -999px;
+}
+
+#header-wrapper .user-menu {
+    text-align: center;
+}
+
+#header-wrapper .user-menu a {
+    display: inline-block;
+    position: relative;
+    padding: 5px;
+    font-size: 1.4rem;
+    color: #777;
+}
+
+#header-wrapper .user-menu a:not(:last-of-type)::after {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    right: -2px;
+    top: 10px;
+    width: 1px;
+    height: 12px;
+    background: #ccc;
+}
+
+
+/**********************************************************************************
+  ** gnb
+  ***********************************************************************************/
+#header-wrapper .main {
+    display: flex;
+}
+
+#header-wrapper .main>li {
+    position: relative;
+    /* width: 16.66%; */
+}
+
+#header-wrapper .main>li h3 a {
+    display: block;
+    position: relative;
+    padding: 30px 28px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+#header-wrapper .sub {
+    display: none;
+    position: absolute;
+    left: 0;
+    z-index: 201;
+    width: 100%;
+    height: 240px;
+    padding-top: 20px;
+}
+
+#header-wrapper .sub li a {
+    padding: 14px 10px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+#header-wrapper .sub li:hover a {
+    color: #2ed277
+}
+
+#header-wrapper .gnb-bg {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: 199;
+    width: 100%;
+    height: 240px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.gnb-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 199;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, .4);
+}
+
+
+
+/**********************************************************************************
+** container
+***********************************************************************************/
+.container-wrapper {
+    position: relative;
+    margin-top: 100px;
+}
+
+
+
+/**********************************************************************************
+** footer
+***********************************************************************************/
+#footer-wrapper {
+    padding: 20px 0 40px;
+    background: #fff;
+    border-top: 1px solid #ddd;
+}
+
+#footer-wrapper .footer-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+#footer-wrapper .footer-top .menu-list li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#footer-wrapper .footer-top .menu-list li a {
+    position: relative;
+    padding: 5px;
+}
+
+#footer-wrapper .footer-top .menu-list li:not(:last-of-type) a::after {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: -8px;
+    content: '';
+    width: 1px;
+    height: 14px;
+    background: #ccc;
+}
+
+#footer-wrapper .footer-top .sns-list li:not(:last-of-type) {
+    margin-right: 16px
+}
+
+#footer-wrapper .footer-top .sns-list li ion-icon {
+    font-size: 3rem;
+}
+
+#footer-wrapper .footer-top .sns-list li ion-icon[name="logo-facebook"] {
+    color: #4267B2;
+}
+
+#footer-wrapper .footer-top .sns-list li ion-icon[name="logo-instagram"] {
+    color: #c13584;
+}
+
+#footer-wrapper .footer-top .sns-list li ion-icon[name="logo-youtube"] {
+    color: #ff0000;
+}
+
+#footer-wrapper .footer-bottom {
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+#footer-wrapper .footer-bottom .footer-logo {
+    width: 140px;
+    height: 45px;
+}
+
+#footer-wrapper .footer-bottom .compnay-info-list {
+    width: 800px;
+}
+
+#footer-wrapper .footer-bottom .family-site-wrap {
+    position: relative;
+    width: 160px;
+}
+
+#footer-wrapper .footer-bottom .family-site-btn {
+    width: 100%;
+    height: 40px;
+    padding: 0 20px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+#footer-wrapper .footer-bottom .family-site-btn span {
+    display: block;
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+#footer-wrapper .footer-bottom .family-site-btn ion-icon {
+    position: absolute;
+    right: 0;
+    color: #1f1f1f;
+}
+
+#footer-wrapper .footer-bottom .family-site-list {
+    display: none;
+    position: absolute;
+    bottom: 100px;
+    z-index: 200;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background: #fff;
+}
+
+#footer-wrapper .footer-bottom .family-site-list li a {
+    display: block;
+    padding: 8px 16px;
+    font-size: 1.5rem
+}
+

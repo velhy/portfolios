@@ -1,0 +1,88 @@
+body {
+background: #DD5E89;  /* fallback for old browsers */
+background: linear-gradient(to right, #F7BB97, #DD5E89)
+
+}
+
+#wrap {
+    width:90%; background: #fff; padding:30px; box-sizing: border-box; border-radius:20px; margin: 40px auto; font-family: "Noto Sans KR"; font-weight: 300; position: relative
+}
+
+.des {
+    font-size:14px; margin-bottom: 40px; text-align: center
+}
+
+/*
+.bk {
+    width:280px; position: absolute; top:80px; left:80px
+}
+
+
+*/
+
+.home {
+    display: block; position: absolute; top:20px; right:20px
+}
+
+.logo {
+    display: none; background: url('../../images/logo.png') no-repeat; width:120px; height:80px; text-indent: -999px; overflow: hidden; background-size: 120px; margin: 0 auto 10px
+}
+
+#content h2 {
+    font-size:26px; font-weight: 700; margin-bottom: 30px; text-align: center; 
+}
+
+#content #login_form {
+    position: relative; 
+}
+
+#content #login_form ul li {
+    margin-bottom:20px; text-align: center; position: relative
+}
+
+#content #login_form ul li input {
+    width:90%; height:60px; box-sizing: border-box; padding:10px; border-bottom:1px solid #ccc; font-family: "Noto Sans KR"; font-weight: 300; font-size: 14px; border-right:0; border-top: 0; border-left: 0; outline: 0
+}
+
+
+#content #login_form ul li #eye {
+    position: absolute; top:20px; right: 35px;
+}
+
+#content #login_form ul li #eye i {
+     font-size: 18px; color: #555
+}
+
+#content #login_form ul li .login_btn {
+    display: block; width:150px; height:46px; border-radius: 30px; margin: 35px auto; background: #fe4365; color: #fff; cursor: pointer
+}
+
+#content #login_form ul li span {
+    color: #666;     font-size: 12px;
+}
+
+#content #login_form ul li .join_btn {
+     font-size:12px; text-decoration: underline; font-weight: 400; 
+}
+
+#content #login_form ul li:nth-of-type(5) {
+    width:240px; margin:40px auto
+}
+
+#content #login_form .idf, #content #login_form .psf {
+    display: block; width:120px; padding-top:60px; text-align: center; position: relative; float:left; font-size: 12px
+}
+
+#content #login_form .idf::before {
+    display: block; content: ''; position: absolute; top:-6px; left:50%;margin-left: -25px; width:54px; height:54px; background: url(../images/login2.png); background-size: 54px
+}
+
+#content #login_form .psf::before {
+    display: block; content: ''; position: absolute; top:-6px; left:50%;margin-left: -25px; width:54px; height:54px; background: url(../images/pass1.png); background-size: 54px
+}
+
+
+
+
+
+

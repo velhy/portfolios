@@ -1,0 +1,610 @@
+/* COMMON CSS */
+#wrap {
+    overflow: hidden;
+    width: 100%;
+}
+
+.loading {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 10000;
+    background: #fff;
+}
+
+.loading .name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90px;
+    height: 90px;
+    border: 2px solid #111;
+    border-radius: 10px;
+    font-family: 'yg-jalnan';
+    font-weight: 700;
+    color: #111;
+    transition: all .5s ease;
+    animation: nameMove .5s infinite alternate;
+}
+
+@keyframes nameMove {
+    0% {
+        transform: translate(-50%, -30%);
+    }
+
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
+
+.loading .name.active {
+    left: 50px;
+    top: 30px;
+    transform: none;
+    width: auto;
+    height: auto;
+    border: none;
+    color: #fff;
+}
+
+/* 스와이퍼  */
+.swiper-slide img {
+    border: 2px solid #eee;
+    border-radius: 10px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #1f1f1f;
+    color: #fff;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next::after {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.emoji {
+    display: inline-block;
+    transition: all .3s ease;
+    position: relative;
+    animation: emojiMove .8s infinite alternate;
+}
+
+
+@keyframes emojiMove {
+    0% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(10deg);
+    }
+}
+
+section:not(:first-of-type)::after {
+    position: absolute;
+    content: '';
+    color: #eee;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 10rem;
+    transition: all .3s ease;
+    opacity: 0;
+}
+
+section:nth-of-type(2)::after {
+    content: 'About Me';
+    top: 300px;
+    right: -100px;
+}
+
+section:nth-of-type(2).active::after {
+    right: 10px;
+    opacity: 1;
+}
+
+section:nth-of-type(3)::after {
+    content: 'My Skills';
+    top: 400px;
+    left: -100px;
+}
+
+section:nth-of-type(3).active::after {
+    left: 10px;
+    opacity: 1;
+}
+
+section:nth-of-type(4)::after {
+    content: 'Portfolio';
+    top: 100px;
+    right: -100px;
+}
+
+section:nth-of-type(4).active::after {
+    right: 10px;
+    opacity: 1;
+}
+
+section:nth-of-type(5)::after {
+    content: 'Contact';
+    left: -100px;
+    bottom: 50px;
+}
+
+section:nth-of-type(5).active::after {
+    left: 10px;
+    opacity: 1;
+}
+
+
+
+/**********************************************************************************
+** 홈
+***********************************************************************************/
+.home {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+.home .video-bg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: auto;
+    min-width: 100%;
+    height: auto;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.home .home-wrap {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .3s ease;
+}
+
+.home .home-wrap p {
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all .3s ease;
+    color: #fff;
+}
+
+.home .home-wrap p.view {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.home .home-wrap .txt-md {
+    margin-bottom: 10px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+.home .home-wrap .tit-md {
+    margin-bottom: 0;
+    font-family: 'yg-jalnan';
+    transition-delay: .3s;
+}
+
+.home .home-wrap .txt {
+    font-size: 2.4rem;
+    transition-delay: .6s;
+}
+
+.home a.down {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+    padding: 10px;
+    opacity: 0;
+}
+
+.home a.down img {
+    width: 40px;
+    animation: ani .8s infinite alternate;
+}
+
+@keyframes ani {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+
+
+/**********************************************************************************
+** 소개
+***********************************************************************************/
+.about {
+    background: #fff;
+}
+
+.about h2,
+.about p,
+.about ul {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all .5s ease;
+}
+
+.about h2.view,
+.about p.view,
+.about ul.view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about .highlight {
+    position: relative;
+}
+
+.about .highlight {
+    display: inline-block;
+    position: relative;
+}
+
+.about .highlight::before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: -2px;
+    z-index: 0;
+    width: 100%;
+    height: 20px;
+    padding: 2px;
+    background: #fbc531;
+    transform: skew(-5deg);
+}
+
+.about .highlight span {
+    position: relative;
+    z-index: 100;
+    color: #fff;
+}
+
+.about .about-profile li {
+    margin-bottom: 10px;
+    font-size: 1.7rem;
+}
+
+.about .about-profile li span {
+    display: inline-block;
+    margin-left: 8px;
+    font-family: 'Montserrat';
+    font-size: 1.4rem;
+    color: #999;
+}
+
+
+
+/**********************************************************************************
+** 스킬  
+***********************************************************************************/
+.skill-wrapper .skill-wrap h2,
+.skill-wrapper .skill-wrap dl {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all .5s ease;
+}
+
+.skill-wrapper .skill-wrap h2.view,
+.skill-wrapper .skill-wrap dl.view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.skill-wrapper .skill-wrap p {
+    width: 35%;
+}
+
+.skill-wrapper .skill {
+    width: 60%;
+}
+
+.skill-wrapper .skill dt {
+    margin-bottom: 15px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.skill-wrapper .skill dt:not(:first-of-type) {
+    margin-top: 40px;
+}
+
+.skill-wrapper .skill dd {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.skill-wrapper .skill dd::before {
+    position: absolute;
+    top: 11px;
+    left: 0;
+    content: '';
+    width: 4px;
+    height: 4px;
+    border: 2px solid #8c7ae6;
+    border-radius: 50%;
+}
+
+
+/**********************************************************************************
+** 포트폴리오 
+***********************************************************************************/
+.work {
+    background: #fafafa;
+}
+/* 
+.work .inner > h2,
+.work .inner > p,
+.work .inner .item-wrap {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all .5s ease;
+}
+
+.work .inner > h2.view,
+.work .inner > p.view,
+.work .inner .item-wrap.view {
+    opacity: 1;
+    transform: translateY(0);
+} */
+
+.work .txt-md {
+    color: #333;
+}
+
+.work img {
+    width: 100%;
+}
+
+.work .item-wrap {
+    float: left;
+    /* position: relative; */
+    width: 32%;
+    margin-right: 2%;
+    margin-bottom: 40px;
+    transition: all .3s ease;
+}
+
+.work .item-wrap:nth-of-type(3n) {
+    margin-right: 0;
+}
+
+.work .item-wrap .item {
+    display: block;
+    text-align: center;
+}
+
+.work .item-wrap .item img {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    box-shadow: 14px 12px 20px rgb(0 0 0 / 14%);
+    transition: all .3s ease;
+}
+
+.work .item-wrap .item:hover img {
+    transform: translateY(-10px);
+    box-shadow: 14px 12px 20px rgb(0 0 0 / 20%);
+}
+
+.work .item-wrap .item dl {
+    padding: 18px 24px;
+    color: #333;
+}
+
+.work .tit-sm {
+    font-weight: 500;
+}
+
+.work .txt-sm span {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+
+/**********************************************************************************
+** 연락 
+***********************************************************************************/
+.contact .inner h2,
+.contact .inner p,
+.contact .inner > div {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all .5s ease;
+}
+
+.contact .inner h2.view,
+.contact .inner p.view,
+.contact .inner > div.view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.contact .flex {
+    align-items: center;
+}
+
+.contact form {
+    width: 55%
+}
+
+.contact .info {
+    width: 40%;
+}
+
+.contact .info dl {
+    margin-bottom: 80px;
+    border-bottom: 1px solid #eee;
+}
+
+.contact .info dl:last-of-type {
+    margin-bottom: 0;
+}
+
+.contact .info dt {
+    font-family: 'yg-jalnan';
+}
+
+.contact .txt-md {
+    margin-bottom: 20px;
+}
+
+.contact #emailForm {
+    text-align: center;
+}
+
+.contact #emailForm li {
+    position: relative;
+    margin-top: 20px;
+}
+
+.contact #emailForm li label {
+    display: block;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: left;
+    color: #777;
+}
+
+.contact #emailForm li input,
+.contact #emailForm li textarea {
+    width: 100%;
+    padding: 40px 24px 20px;
+    background: #f4f4f4;
+    border: none;
+}
+
+.contact #emailForm li input[name="message"] {
+    min-height: 240px;
+}
+
+.contact #emailForm .btn-submit {
+    display: inline-block;
+    margin-top: 24px;
+    padding: 12px 22px;
+    background: #8c7ae6;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.6rem
+}
+
+
+
+@media screen and (max-width: 1600px) {}
+
+/* PC */
+@media screen and (max-width:1280px) {
+    .inner {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+
+/* TABLET */
+@media screen and (max-width:1024px) {
+    html {
+        font-size: 9px;
+    }
+
+    section {
+        padding: 90px 0
+    }
+
+    section::after {
+        display: none;
+    }
+
+    .modal-wrap {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+/* SMALL TABLET */
+@media screen and (max-width:768px) {
+    .skill-wrapper .skill {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .work .item-wrap {
+        width: 49%;
+        margin-right: 2%;
+    }
+
+    .work .item-wrap:nth-of-type(2n) {
+        margin-right: 0;
+    }
+
+    .contact .flex {
+        flex-direction: column;
+    }
+
+    .contact form {
+        width: 95%
+    }
+
+    .contact .info {
+        width: 95%
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width:640px) {
+    html {
+        font-size: 8px;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    .work .item-wrap {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .work .item-wrap:nth-of-type(2n) {
+        margin-right: 0;
+    }
+}
+
+/* MIN SIZE */
+@media screen and (max-width:480px) {
+    #wrap {
+        min-width: 320px;
+    }
+}

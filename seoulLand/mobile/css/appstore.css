@@ -1,0 +1,10 @@
+.thumbs-container .swiper-slide {
+	width: 145px;
+	text-align: left;
+}
+.thumbs-container img {
+	cursor:pointer;
+	width: 140px;
+	margin-right:5px;
+	border-radius:5px;
+}

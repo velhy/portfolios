@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+/*
+ * reset.css
+*/
+
+/**********************************************************************************
+** Base
+***********************************************************************************/
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+input,
+textarea {
+    outline: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+button {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+}

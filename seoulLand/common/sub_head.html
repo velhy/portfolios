@@ -1,0 +1,85 @@
+<div id="skipNav">
+    <a href="#sub-cont-wrap">본문 바로가기</a>
+    <a href="#gnb">글로벌 네비게이션 바로가기</a>
+</div>
+
+<!-- S : wrapper -->
+<div id="wrapper">
+
+    <!-- S : header -->
+    <header id="header-wrapper">
+        <div class="inner">
+            <h1 class="logo"><a href="../index.html">서울랜드</a></h1>
+            <nav id="gnb">
+                <h2 class="hidden">글로벌네비게이션영역</h2>
+                <ul class="main">
+                    <li>
+                        <h3><a class="depth1" href="../intro/greeting.html">서울랜드 소개</a></h3>
+                        <ul class="sub">
+                            <li><a class="depth2" href="../intro/greeting.html">인사말</a></li>
+                            <li><a class="depth2" href="../intro/history.html">연혁</a></li>
+                            <li><a class="depth2" href="../intro/map.html">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3><a class="depth1" href="../enjoy/attraction.html">즐길거리</a></h3>
+                        <ul class="sub">
+                            <li><a class="depth2" href="../enjoy/attraction.html">어트랙션</a></li>
+                            <li><a class="depth2" href="../enjoy/festival.html">페스티벌</a></li>
+                            <li><a class="depth2" href="../enjoy/restaurant.html">레스토랑</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3><a class="depth1" href="../info/guide.html">이용가이드</a></h3>
+                        <ul class="sub">
+                            <li><a class="depth2" href="../info/guide.html">이용안내</a></li>
+                            <li><a class="depth2" href="../info/operation.html">운영시간</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3><a class="depth1" href="../price/ticket.html">요금/혜택</a></h3>
+                        <ul class="sub">
+                            <li><a class="depth2" href="../price/ticket.html">이용요금</a></li>
+                            <li><a class="depth2" href="../price/benefit.html">할인혜택</a></li>
+                            <li><a class="depth2" href="../price/card.html">제휴카드</a></li>
+                        </ul>
+                    </li>
+                    <li class="last">
+                        <h3><a class="depth1" href="../notice/list.php">고객센터</a></h3>
+                        <ul class="sub">
+                            <li><a class="depth2" href="../notice/list.php">공지/이벤트</a></li>
+                            <li><a class="depth2" href="../notice/faq.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="user-menu">
+                <?
+                if(!$userid) 
+                    {
+                ?>
+                <a href="../login/login_form.php">로그인</a>
+                <a href="../member/member_form.php">회원가입</a>
+                <?
+                    }
+                    else  
+                    {
+                ?>
+                <a href="javascript:void(0)" class="name" title="이름"><?=$username?></a>
+                <a href="../login/logout.php">로그아웃</a>
+                <a href="../login/member_form_modify.php">회원정보수정</a>
+                <a href="../login/delete_form.php">회원탈퇴</a>
+                <?
+                    }
+                ?>
+            </div>
+        </div>
+        <div class="gnb-bg"></div>
+
+    </header>
+    <div class="gnb-modal"></div>
+
+    <div class="floating-menu">
+        <a href="../book/book_form.php">예매</a>
+      </div>
+    <!-- E : header -->

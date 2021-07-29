@@ -1,0 +1,246 @@
+/**********************************************************************************
+** 폼 전체
+***********************************************************************************/
+#form-wrapper {
+    width: 500px;
+    margin: 100px auto;
+    padding: 50px 70px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+#form-wrapper .logo-form {
+    width: 180px;
+    margin: 0 auto;
+}
+
+#form-cont-wrap {
+    position: relative;
+    margin-top: 20px;
+}
+
+#form-cont-wrap .page-title {
+    margin-bottom: 36px;
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: 500;
+}
+
+#form-cont-wrap input,
+#bookConfirm input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 14px 30px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    outline: 0;
+    font-size: 1.6rem;
+    transition: all .3s ease;
+}
+
+#form-cont-wrap input:read-only {
+    background: #eee;
+}
+
+#form-cont-wrap input:focus {
+    border: 1px solid #2ed277;
+}
+
+#form-cont-wrap li {
+    position: relative;
+}
+
+#form-cont-wrap .modify-list .btn-lock {
+    top: 36px;
+}
+
+#form-cont-wrap .btn-wrap {
+    text-align: center;
+}
+
+#form-cont-wrap .btn-wrap a {
+    display: inline-block;
+    position: relative;
+    margin-top: 20px;
+    padding: 5px;
+    font-size: 1.4rem;
+    color: #777;
+}
+
+#form-cont-wrap .btn-wrap a:not(:last-of-type)::after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 12px;
+    right: -2px;
+    width: 1px;
+    height: 10px;
+    background: #ccc;
+}
+
+.find-result li {
+    margin-bottom: 5px;
+}
+
+.find-result table {
+    width: 100%;
+    border-top: 2px solid #1f1f1f;
+}
+
+.find-result th,
+.find-result td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.find-result td:nth-of-type(2n+1) {
+    background: #f4f4f4;
+}
+
+.find-result th:first-of-type,
+.find-result td:first-of-type {
+    border-left: 0;
+}
+
+.find-result th:last-of-type,
+.find-result td:last-of-type {
+    border-right: 0;
+}
+
+#loadId {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    font-size: 1.4rem;
+    color: #777;
+}
+
+
+
+/**********************************************************************************
+** 예매 
+***********************************************************************************/
+#bookForm {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#bookForm .tit {
+    margin-bottom: 10px;
+}
+
+#bookForm .txt {
+    margin: 0 0 30px 0;
+}
+
+#bookForm>div {
+    margin-bottom: 70px;
+}
+
+#bookForm .visit-wrap #date {
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+    padding: 14px 30px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    font-family: 'Noto Sans KR';
+    text-align: center;
+}
+
+#bookForm .age {
+    align-items: center;
+    width: 33.33%;
+}
+
+#bookForm .age .two input[type="number"] {
+    width: 40px;
+    height: 30px;
+    border: none;
+    font-size: 2rem;
+}
+
+#bookForm .age .two button {
+    width: 50px;
+    height: 50px;
+    margin-right: 6px;
+    border: 1px solid #ddd;
+    background: #efefef;
+    text-align: center;
+}
+
+#bookForm .age li:first-of-type {
+    width: 40%;
+}
+
+#bookForm .age li:last-of-type {
+    display: none
+}
+
+#bookForm .age #fare1,
+#bookForm .age #fare2,
+#bookForm .age #fare3 {
+    display: none
+}
+
+#bookForm .total-wrap {
+    margin-top: 30px;
+    padding: 50px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+#bookForm .total-wrap p:last-of-type {
+    margin-bottom: 20px;
+}
+
+#bookForm .total-wrap .total-fare {
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 30px;
+    border-top: 1px solid #ddd;
+    font-size: 2rem;
+}
+
+#bookForm .total-wrap .total-fare label {
+    font-weight: 700;
+}
+
+#bookForm .total-wrap .total-fare input {
+    width: 100px;
+    margin-top: 30px;
+    border: none;
+    background: none;
+    font-size: 2.2rem;
+}
+
+#bookForm .pay-wrap li {
+    padding: 30px 0;
+    border: 1px solid #eee;
+    text-align: center;
+}
+
+#bookForm .pay-wrap li img {
+    width: 70px;
+    margin: 0 auto;
+}
+
+#bookForm .pay-wrap li .tit-sm {
+    margin: 20px 0 6px;
+}
+
+#bookForm .pay-wrap li input,
+#bookForm .pay-wrap li label {
+    cursor: pointer;
+}
+
+
+#bookConfirm {
+    width: 440px;
+    margin: 0 auto;
+}
+
+#bookConfirm .txt-md {
+    margin-bottom: 16px;
+}
