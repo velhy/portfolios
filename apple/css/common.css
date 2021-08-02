@@ -1,0 +1,311 @@
+@font-face {
+    font-family: AppleSDGothicNeoM;
+    src: url(../images/AppleSDGothicNeoM.eot); 
+    src: local(☺),
+         url(../images/AppleSDGothicNeoM.woff2) format('woff2'), 
+         url(../images/AppleSDGothicNeoM.woff) format('woff'), 
+         url(../images/AppleSDGothicNeoM.ttf) format('truetype');
+  }
+
+/* RESET */
+* {
+    margin: 0; padding:0
+}
+
+ul, li {
+    list-style: none
+}
+
+a {
+    color: #333; text-decoration: none
+}
+
+img {
+    display: block
+}
+
+/* COMMON */
+html {
+    font-size: 62.5%; /* 10px */
+}
+
+body {
+    font-family: 'AppleSDGothicNeoM';
+    font-weight: 400;
+    font-size: 1.6rem
+}
+
+.clearfix::before,
+.clearfix::after {
+    display: block;
+    content: '';
+    clear: both
+}
+
+.hidden {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -1000%;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    color: #fff
+}
+
+/* header */
+#headerArea {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    background: rgba(0, 0, 0, .9);
+    z-index: 10
+}
+
+#headerArea .header-inner {
+    width: 70%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#headerArea .logo {
+    width: 10%;
+    float: left;
+}
+
+#headerArea .logo a {
+    display: block;
+    width: 20px;
+    height: 20px;
+    text-indent: -999px;
+    overflow: hidden;
+    background: url(../images/apple-logo.png) no-repeat;
+    background-size: 18px;
+    margin: 5px auto 0
+}
+
+#headerArea .btn {
+    display: none
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.7;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    display: none
+}
+
+#headerArea #gnb {
+    float: left;
+    width: 75%;
+}
+
+#headerArea #gnb .main {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#headerArea #gnb .main li {
+    width: 16%
+}
+
+#headerArea #gnb .main li a {
+    display: block;
+    padding: 10px 0;
+    color: #ccc;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 300;
+    transition: all .3s ease-out;
+}
+
+#headerArea #gnb .main li:hover a {
+    color: #fff
+}
+
+#headerArea #gnb .close {
+    display: none;
+}
+
+#headerArea .right-menu {
+    float: left;
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#headerArea .right-menu a {
+    display: block;
+    width: 50%;
+    padding: 6px 0;
+    text-align: center;
+}
+
+#headerArea .right-menu a ion-icon {
+    font-size: 2rem;
+    color: #ccc;
+    transition: all .3s ease-out;
+}
+
+#headerArea .right-menu a:hover ion-icon {
+    color: #fff;
+}
+
+
+/* footer */
+#footerArea {
+    padding: .8em;
+    background: #eee;
+    color: #333
+}
+
+#footerArea .foot-inner {
+    width: 70%;
+    margin: 0 auto;
+}
+
+#footerArea p, #footerArea address {
+    font-size: 1.2rem;
+    font-style: normal;
+    color: #999;
+    text-align: left;
+}
+
+#footerArea address::before {
+    display: block;
+    content: '';
+    margin-bottom: 1em;
+    width: 100%;
+    height: .08rem;
+    background: #ccc;
+}
+
+
+@media screen and (max-width:1024px) {
+    #footerArea .foot-inner {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    html {
+        font-size: 8px;
+    }
+
+    body {
+        font-family: 'Noto Sans KR';
+        font-weight: 400;
+        letter-spacing: -1px;
+    }
+
+    #headerArea {
+        height: 45px;
+        position: fixed;
+        z-index: 999;
+    }
+
+    #headerArea .btn {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    #headerArea .btn ion-icon {
+        color: #eee;
+        font-size: 2.6rem
+    }
+
+    #headerArea .logo {
+        float:none;
+        position: absolute;
+        top: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #headerArea #gnb {
+        width: 70%;
+        height: 100%;
+        position: absolute;
+        left: -100%;
+        top: 0;
+        z-index: 20;
+        background: rgba(0, 0, 0, .9);
+        opacity: 0;
+    }
+
+    #headerArea #gnb li a {
+        display: block;
+        padding: 10px 0;
+    }
+
+    #headerArea #gnb .close {
+        display: block;
+        position: absolute;
+        left: -25px;
+        top: 0;
+        font-size: 2.5rem;
+        color: #fff
+    }
+    
+    #headerArea #gnb .main {
+        flex-direction: column;
+        margin: 50px auto 0;
+        width: 85%;
+    }
+
+    #headerArea #gnb .main li {
+        width: 100%;
+    }
+
+    #headerArea #gnb .main li a {
+        text-align: left;
+        padding: 10px 0;
+        border-bottom: thin solid #333;
+        font-weight: 400;
+        color: #eee;
+        font-size: 2rem;
+    }
+
+    #headerArea .right-menu {
+        width: auto;
+        float: none;
+        position: absolute;
+        right: 10px;
+        top: 5px
+    }
+
+    #headerArea .right-menu a:nth-of-type(1) {
+        display: none;
+    }
+
+    #headerArea .right-menu a ion-icon {
+        font-size: 2.6rem;
+    }
+
+    #footerArea .foot-inner {
+        width: auto;
+        margin: 0 5%;
+    }
+
+    #footerArea address, #footerArea p {
+        font-size: 1.6rem;
+    }
+
+    #footerArea address a {
+        color: #999;
+        
+    }
+
+}
+
+
+
+
